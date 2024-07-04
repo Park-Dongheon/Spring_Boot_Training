@@ -1,0 +1,5 @@
+package com.rubypaper.domain;
+
+public class BoardVO {
+
+}
