@@ -1,5 +1,6 @@
 package edu.pnu.controller;
 
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
@@ -10,78 +11,78 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.pnu.dao.MemberDAO;
 import edu.pnu.domain.MemberDTO;
 import edu.pnu.service.MemberService;
 
 @RestController
 public class MemberController {
-	MemberService service;
+	private MemberService memberService;
+	
+	public MemberController(MemberService memberService) {
+		this.memberService = memberService;
+	}
 
-	public MemberController() {
-		service = new MemberService();
-	}
-	
-	// 검색(Read - select)
+	// 검색(Read - Select)
 	@GetMapping("/members")
-	public List<MemberDAO> getAllMember() {
-		return service.getAllMember();
+	public List<MemberDTO> getAllMembers() throws ClassNotFoundException, SQLException {
+		return memberService.getAllMembers();
 	}
 	
-	// 검색(Read - select)
+	// 검색(Read - Select)
 	@GetMapping("/member")
-	public MemberDTO getMemberById(Integer id) {
-//		for (MemberDTO m : service.getAllMember()) {
-//			if (m.getId() == id)
-//				return m;
-//		}
+	public MemberDTO getMemberById(Integer id) throws ClassNotFoundException, SQLException {
+		for (MemberDTO m : memberService.getAllMembers()) {
+			if (m.getId() == id) {
+				return m;
+			}
+		}
 		return null;
 	}
 	
-	// 입력(Create - insert)
+	// 입력(Create - Insert)
 	@PostMapping("/member")
-	public MemberDTO addMember(MemberDTO memberDTO) {
-		if (getMemberById(memberDTO.getId()) != null) {
+	public MemberDTO addMember(MemberDTO memberDTO) throws ClassNotFoundException, SQLException {
+		if (getMemberById(memberDTO.getId())!= null) {
 			System.out.println(memberDTO.getId() + "가 이미 존재합니다.");
 			return null;
 		}
 		memberDTO.setRegidate(new Date());
-//		service.getAllMember().add(memberDTO);
-		return memberDTO;
+		int result = memberService.addMember(memberDTO);
+		return result > 0 ? memberDTO : null;
 	}
 	
-	// 입력(Create - insert)
+	// 입력(Create - Insert)
 	@PostMapping("/memberJSON")
-	public MemberDTO addMemberJSON(@RequestBody MemberDTO memberDTO) {
+	public MemberDTO addMemberJSON(@RequestBody MemberDTO memberDTO) throws ClassNotFoundException, SQLException {
 		if (getMemberById(memberDTO.getId()) != null) {
 			System.out.println(memberDTO.getId() + "가 이미 존재합니다.");
 			return null;
 		}
 		memberDTO.setRegidate(new Date());
-//		service.getAllMember().add(memberDTO);
-		return memberDTO;
+		int result = memberService.addMember(memberDTO);
+		return result > 0 ? memberDTO : null;
 	}
 	
-	// 수정(Update - update)
+	// 수정(Update - Update)
 	@PutMapping("/member")
-	public int updateMember(MemberDTO memberDTO) {
+	public int updateMember(MemberDTO memberDTO) throws ClassNotFoundException, SQLException {
 		MemberDTO m = getMemberById(memberDTO.getId());
 		if (m == null)
 			return 0;
 		m.setName(memberDTO.getName());
 		m.setPass(memberDTO.getPass());
-		return 1;
+		return memberService.updateMember(memberDTO);
 	}
 	
-	// 삭제(Delete - delete)
+	// 삭제(Delete - Delete)
 	@DeleteMapping("/member")
-	public int removeMember(Integer id) {
+	public int removeMapping(Integer id) {
 		try {
-			service.getAllMember().remove(getMemberById(id));
+			memberService.removeMember(id);
 		} catch (Exception e) {
 			return 0;
 		}
 		return 1;
-	
 	}
+	
 }

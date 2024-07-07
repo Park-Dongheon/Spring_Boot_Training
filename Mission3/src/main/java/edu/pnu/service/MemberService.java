@@ -1,19 +1,35 @@
 package edu.pnu.service;
 
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import edu.pnu.dao.MemberDAO;
+import edu.pnu.domain.MemberDTO;
 
 @Service
 public class MemberService {
-	private List<MemberDAO> list = new ArrayList<MemberDAO>();
+	private MemberDAO memberDAO;
 
-	public List<MemberDAO> getAllMember() {
-		return list;
+	public MemberService(MemberDAO memberDAO) {
+		this.memberDAO = memberDAO;
 	}
 
+	public List<MemberDTO> getAllMembers() throws ClassNotFoundException, SQLException {
+		return memberDAO.getAllMembers();
+	}
+	
+	public int addMember(MemberDTO memberDTO) throws SQLException {
+		return memberDAO.addMember(memberDTO);
+	}
+	
+	public int updateMember(MemberDTO memberDTO) throws SQLException {
+		return memberDAO.updateMember(memberDTO);
+	}
+
+	public int removeMember(Integer id) throws SQLException {
+		return memberDAO.removeMember(id);
+	}
 	
 }
