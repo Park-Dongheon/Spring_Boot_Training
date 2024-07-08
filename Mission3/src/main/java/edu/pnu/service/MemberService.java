@@ -8,12 +8,11 @@ import org.springframework.stereotype.Service;
 import edu.pnu.dao.MemberDAO;
 import edu.pnu.domain.MemberDTO;
 
-@Service
 public class MemberService {
 	private MemberDAO memberDAO;
 
-	public MemberService(MemberDAO memberDAO) {
-		this.memberDAO = memberDAO;
+	public MemberService() throws ClassNotFoundException, SQLException {
+		this.memberDAO = new MemberDAO();
 	}
 
 	public List<MemberDTO> getAllMembers() throws ClassNotFoundException, SQLException {

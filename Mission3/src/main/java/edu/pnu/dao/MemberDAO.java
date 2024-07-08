@@ -7,13 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
 import edu.pnu.domain.MemberDTO;
 
-@Repository
+
 public class MemberDAO {
 	private static String DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static String URL = "jdbc:mysql://localhost:3306/musthave";
@@ -46,13 +47,16 @@ public class MemberDAO {
 	}
 	
 	public int addMember(MemberDTO memberDTO) throws SQLException {
-		String query = "INSERT INTO member (id, pass, name, regidate) VALUES (?, ?, ?, ?); ";
+		String query = "INSERT INTO member (id, pass, name) VALUES (?, ?, ?); ";
 		
 		try (PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setInt(1, memberDTO.getId());
 			ps.setString(2, memberDTO.getPass());
 			ps.setString(3, memberDTO.getName());
-			ps.setTimestamp(4, new java.sql.Timestamp(memberDTO.getRegidate().getTime()));
+			/*
+			 * ps.setTimestamp(4, new
+			 * java.sql.Timestamp(memberDTO.getRegidate().getTime()));
+			 */
 			
 			return ps.executeUpdate();
 		}

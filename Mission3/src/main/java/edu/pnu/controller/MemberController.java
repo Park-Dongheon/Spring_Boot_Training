@@ -18,8 +18,8 @@ import edu.pnu.service.MemberService;
 public class MemberController {
 	private MemberService memberService;
 	
-	public MemberController(MemberService memberService) {
-		this.memberService = memberService;
+	public MemberController() throws ClassNotFoundException, SQLException {
+		this.memberService = new MemberService();
 	}
 
 	// 검색(Read - Select)

@@ -13,8 +13,6 @@ import lombok.ToString;
 @Setter
 @ToString
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class MemberDTO {
 	private Integer id;
 	private String pass;
