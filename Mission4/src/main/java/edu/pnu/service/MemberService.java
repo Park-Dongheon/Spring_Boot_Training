@@ -22,8 +22,8 @@ public class MemberService {
 		
 		@SuppressWarnings("unchecked")
 		List<MemberDTO> list = (List<MemberDTO>)map.get("result");
-		String sqlstring = (String)map.get("sqlstring");
-		boolean success = (boolean)map.get("success");
+		String sqlstring = (String) map.get("sqlstring");
+		boolean success = (boolean) map.get("success");
 
 		logDAO.addLog(sqlstring, success, "GET");
 		
@@ -31,19 +31,39 @@ public class MemberService {
 	}
 	
 	public int addMember(MemberDTO memberDTO) throws SQLException {
-//		Map<String, Object> map = memberDAO.addMember(memberDTO);
+		Map<String, Object> map = memberDAO.addMember(memberDTO);
 		
+		int result = (int) map.get("result");
+		String sqlstring = (String) map.get("sqlstring");
+		boolean success = (boolean) map.get("success");
 		
+		logDAO.addLog(sqlstring, success, "POST");
 		
-		return memberDAO.addMember(memberDTO);
+		return result;
 	}
 	
 	public int updateMember(MemberDTO memberDTO) throws SQLException {
-		return memberDAO.updateMember(memberDTO);
+		Map<String, Object> map = memberDAO.updateMember(memberDTO);
+		
+		int result = (int) map.get("result");
+		String sqlstring = (String) map.get("sqlstring");
+		boolean success = (boolean) map.get("success");
+		
+		logDAO.addLog(sqlstring, success, "PUT");
+		
+		return result;
 	}
 
 	public int removeMember(Integer id) throws SQLException {
-		return memberDAO.removeMember(id);
+		Map<String, Object> map = memberDAO.removeMember(id);
+		
+		int result = (int) map.get("result");
+		String sqlstring = (String) map.get("sqlstring");
+		boolean success = (boolean) map.get("success");
+		
+		logDAO.addLog(sqlstring, success, "DELETE");
+		
+		return result;
 	}
 
 	

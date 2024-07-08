@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import edu.pnu.domain.MemberDTO;
 
 
@@ -21,7 +20,6 @@ public class MemberDAO {
 	private static String USER = "scott";
 	private static String PASSWORD = "tiger";
 	private Connection con;
-	private List<MemberDTO> memberDTO;
 	
 	public MemberDAO() throws SQLException, ClassNotFoundException {
 		Class.forName(DRIVER);
@@ -46,49 +44,70 @@ public class MemberDAO {
             }
         }
         
-        map.put("reulst",  list);
+        map.put("result",  list);
         map.put("sqlstring", query);
         map.put("success", true);
         
 		return map;
 	}
 	
-	public int addMember(MemberDTO memberDTO) throws SQLException {
-		String query = "INSERT INTO member (id, pass, name) VALUES (?, ?, ?); ";
+	public Map<String, Object> addMember(MemberDTO memberDTO) throws SQLException {
+		Map<String, Object> map = new HashMap<>();
 		
+		String query = "INSERT INTO member (pass, name) VALUES (?, ?); ";
+		
+		int result = 0;
 		try (PreparedStatement ps = con.prepareStatement(query)) {
-			ps.setInt(1, memberDTO.getId());
-			ps.setString(2, memberDTO.getPass());
-			ps.setString(3, memberDTO.getName());
-			/*
-			 * ps.setTimestamp(4, new
-			 * java.sql.Timestamp(memberDTO.getRegidate().getTime()));
-			 */
+			ps.setString(1, memberDTO.getPass());
+			ps.setString(2, memberDTO.getName());
 			
-			return ps.executeUpdate();
+			result = ps.executeUpdate();
 		}
+		
+		map.put("result", result);
+		map.put("sqlstring", query);
+		map.put("success", true);
+		
+		return map;
 	}
 
-	public int updateMember(MemberDTO memberDTO) throws SQLException {
+	public Map<String, Object> updateMember(MemberDTO memberDTO) throws SQLException {
+		Map<String, Object> map = new HashMap<>();
+		
 		String query = "UPDATE member SET pass = ?, name = ? WHERE id = ?; ";
 		
+		int result = 0;
 		try (PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setString(1, memberDTO.getPass());
 			ps.setString(2, memberDTO.getName());
 			ps.setInt(3, memberDTO.getId());
 			
-			return ps.executeUpdate();
+			result = ps.executeUpdate();
 		}
+		
+		map.put("result", result);
+		map.put("sqlstring", query);
+		map.put("success", true);
+		
+		return map;
 	}
 
-	public int removeMember(Integer id) throws SQLException {
+	public Map<String, Object> removeMember(Integer id) throws SQLException {
+		Map<String, Object> map = new HashMap<>();
+		
 		String query = "DELETE FROM member WHERE id = ?; ";
 		
+		int deleteRows = 0;
 		try (PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setInt(1, id);
-			int deleteRows = ps.executeUpdate();
-			return deleteRows;
+			deleteRows = ps.executeUpdate();
 		}
+		
+		map.put("result", deleteRows);
+		map.put("sqlstring", query);
+		map.put("success", true);
+		
+		return map;
 	}
 
 }

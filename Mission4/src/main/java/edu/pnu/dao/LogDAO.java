@@ -19,6 +19,7 @@ public class LogDAO {
 	}
 
 
+	// addLog(): 데이터베이스 연결을 설정하고, 로그를 dblog 테이블에 삽입하는 메서드
 	public void addLog(String sqlstring, boolean success, String method) {
 		
 		String query = "INSERT INTO dblog (sqlstring, success, method) VALUES (?, ?, ?); ";
