@@ -6,7 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="lombok"/>
 		<list key="findhistory">
+			<item value="lombok"/>
+			<item value="mysql"/>
 		</list>
 		<list key="replacehistory">
 		</list>
