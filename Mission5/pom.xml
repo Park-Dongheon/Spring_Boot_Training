@@ -61,10 +61,11 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>edu.pnu</groupId>
-			<artifactId>Mission1</artifactId>
+			<groupId>com.rubypapaer</groupId>
+			<artifactId>board-spring-boot-starter</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>

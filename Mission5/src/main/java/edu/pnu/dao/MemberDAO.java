@@ -1,7 +1,6 @@
 package edu.pnu.dao;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,17 +17,18 @@ import lombok.RequiredArgsConstructor;
 
 
 @Repository
+@RequiredArgsConstructor
 public class MemberDAO {
 //	private static String DRIVER = "com.mysql.cj.jdbc.Driver";
-	private static String URL = "jdbc:mysql://localhost:3306/musthave";
-	private static String USER = "scott";
-	private static String PASSWORD = "tiger";
-	private Connection con;
+//	private static String URL = "jdbc:mysql://localhost:3306/musthave";
+//	private static String USER = "scott";
+//	private static String PASSWORD = "tiger";
+	private final Connection con;	// 이 필드는 BoardAutoConfiguration에서 설정한 빈으로 주입
 	
-	public MemberDAO() throws SQLException, ClassNotFoundException {
+//	public MemberDAO() throws SQLException, ClassNotFoundException {
 //		Class.forName(DRIVER);
-		con = DriverManager.getConnection(URL, USER, PASSWORD);		
-	}
+//		con = DriverManager.getConnection(URL, USER, PASSWORD);		
+//	}
 	
 	public Map<String, Object> getAllMembers() throws SQLException, ClassNotFoundException {
 		

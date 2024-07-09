@@ -4,31 +4,34 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Service;
+
+import com.rubypaper.jdbc.util.JDBCConnectionManager;
 
 import edu.pnu.dao.LogDAO;
 import edu.pnu.dao.MemberDAO;
 import edu.pnu.domain.MemberDTO;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
 @Service
-public class MemberService {
+@RequiredArgsConstructor
+public class MemberService implements ApplicationRunner {
 	private final MemberDAO memberDAO;
 	private final LogDAO logDAO;
+	private final JDBCConnectionManager connectionManager;
 
-	// @ final - @RequiredArgsConstructor 로 대체
-//	public MemberService(MemberDAO memberDAO, LogDAO logDAO) {
-//		super();
-//		this.memberDAO = memberDAO;
-//		this.logDAO = logDAO;
-//	}
-	
-	
 //	public MemberService() throws ClassNotFoundException, SQLException {
 //		memberDAO = new MemberDAO();
 //		logDAO = new LogDAO();
 //	}
+	
+	@Override
+	public void run(ApplicationArguments args) throws Exception {
+		System.out.println("커넥션 매니저 : " + connectionManager.toString());
+	}
 
 	public List<MemberDTO>  getAllMembers() throws ClassNotFoundException, SQLException {
 		Map<String, Object> map = memberDAO.getAllMembers();
@@ -78,6 +81,7 @@ public class MemberService {
 		
 		return result;
 	}
+
 
 
 	

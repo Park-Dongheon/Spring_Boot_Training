@@ -15,8 +15,8 @@ import edu.pnu.domain.MemberDTO;
 import edu.pnu.service.MemberService;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
 @RestController
+@RequiredArgsConstructor
 public class MemberController {
 	private final MemberService memberService;
 	
