@@ -20,16 +20,6 @@ import lombok.RequiredArgsConstructor;
 public class MemberController {
 	private final MemberService memberService;
 	
-	// @ final - @RequiredArgsConstructor 로 대체
-//	public MemberController(MemberService memberService) {
-//		super();
-//		this.memberService = memberService;
-//	}
-	
-//	public MemberController() throws ClassNotFoundException, SQLException {
-//		memberService = new MemberService();
-//	}
-
 	// 검색(Read - Select)
 	@GetMapping("/members")
 	public List<MemberDTO> getAllMembers() throws ClassNotFoundException, SQLException {

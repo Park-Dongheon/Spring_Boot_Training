@@ -26,7 +26,7 @@ public class BoardAutoConfiguration {
 	}
 	
     @Bean
-    Connection getDataSource() throws SQLException {
+    Connection getDataConnection() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/musthave";
         String username = "scott";
         String password = "tiger";

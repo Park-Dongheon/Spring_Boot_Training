@@ -12,6 +12,8 @@ import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
+import com.rubypaper.jdbc.util.JDBCConnectionManager;
+
 import edu.pnu.domain.MemberDTO;
 import lombok.RequiredArgsConstructor;
 
@@ -19,19 +21,9 @@ import lombok.RequiredArgsConstructor;
 @Repository
 @RequiredArgsConstructor
 public class MemberDAO {
-//	private static String DRIVER = "com.mysql.cj.jdbc.Driver";
-//	private static String URL = "jdbc:mysql://localhost:3306/musthave";
-//	private static String USER = "scott";
-//	private static String PASSWORD = "tiger";
 	private final Connection con;	// 이 필드는 BoardAutoConfiguration에서 설정한 빈으로 주입
 	
-//	public MemberDAO() throws SQLException, ClassNotFoundException {
-//		Class.forName(DRIVER);
-//		con = DriverManager.getConnection(URL, USER, PASSWORD);		
-//	}
-	
 	public Map<String, Object> getAllMembers() throws SQLException, ClassNotFoundException {
-		
 		Map<String, Object> map = new HashMap<>();
 		List<MemberDTO> list = new ArrayList<MemberDTO>();
 		
@@ -55,6 +47,11 @@ public class MemberDAO {
 		return map;
 	}
 	
+	private String getSQLString(PreparedStatement ps) {
+		String[] sqls = ps.toString().split(": ");
+		return sqls[1];
+	}
+	
 	public Map<String, Object> addMember(MemberDTO memberDTO) throws SQLException {
 		Map<String, Object> map = new HashMap<>();
 		
@@ -66,11 +63,13 @@ public class MemberDAO {
 			ps.setString(2, memberDTO.getName());
 			
 			result = ps.executeUpdate();
+			
+			query = getSQLString(ps);
 		}
 
 		// 정규표현식을 이용한 ? 표현 대체: ? --> \?(정규표현식)
-		query = query.replaceFirst("\\?", memberDTO.getPass());
-		query = query.replaceFirst("\\?", memberDTO.getName());
+//		query = query.replaceFirst("\\?", memberDTO.getPass());
+//		query = query.replaceFirst("\\?", memberDTO.getName());
 		
 		map.put("result", result);
 		map.put("sqlstring", query);
@@ -91,11 +90,13 @@ public class MemberDAO {
 			ps.setInt(3, memberDTO.getId());
 			
 			result = ps.executeUpdate();
+			
+			query = getSQLString(ps);
 		}
 		
-		query = query.replaceFirst("\\?", memberDTO.getPass());
-		query = query.replaceFirst("\\?", memberDTO.getName());
-		query = query.replaceFirst("\\?", memberDTO.getId().toString());
+//		query = query.replaceFirst("\\?", memberDTO.getPass());
+//		query = query.replaceFirst("\\?", memberDTO.getName());
+//		query = query.replaceFirst("\\?", memberDTO.getId().toString());
 		
 		map.put("result", result);
 		map.put("sqlstring", query);
@@ -113,9 +114,13 @@ public class MemberDAO {
 		try (PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setInt(1, id);
 			deleteRows = ps.executeUpdate();
+			
+			query = getSQLString(ps);
 		}
 		
-		query = query.toString().replace("?", id.toString());
+//		query = query.toString().replace("?", id.toString());
+		
+		
 		
 		map.put("result", deleteRows);
 		map.put("sqlstring", query);

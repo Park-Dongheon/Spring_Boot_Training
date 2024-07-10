@@ -10,11 +10,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rubypaper.domain.BoardVO;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 public class BoardController {
 
 	public BoardController() {
 		System.out.println("===> BoardController 생성");
+		
+		log.error("error");
+		log.warn("warn");
+		log.info("BoardController 생성");
+		log.debug("debug");
+		log.trace("trace");
 	}
 	
 	

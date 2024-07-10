@@ -64,6 +64,10 @@ public class MemberDAO {
 			result = ps.executeUpdate();
 		}
 		
+		// 정규표현식을 이용한 ? 표현 대체: ? --> \?(정규표현식)
+		query = query.replaceFirst("\\?", memberDTO.getPass());
+		query = query.replaceFirst("\\?", memberDTO.getName());
+		
 		map.put("result", result);
 		map.put("sqlstring", query);
 		map.put("success", true);
@@ -85,6 +89,10 @@ public class MemberDAO {
 			result = ps.executeUpdate();
 		}
 		
+		query = query.replaceFirst("\\?", memberDTO.getPass());
+		query = query.replaceFirst("\\?", memberDTO.getName());
+		query = query.replaceFirst("\\?", memberDTO.getId().toString());		
+		
 		map.put("result", result);
 		map.put("sqlstring", query);
 		map.put("success", true);
@@ -102,6 +110,8 @@ public class MemberDAO {
 			ps.setInt(1, id);
 			deleteRows = ps.executeUpdate();
 		}
+		
+		query = query.toString().replace("?", id.toString());
 		
 		map.put("result", deleteRows);
 		map.put("sqlstring", query);

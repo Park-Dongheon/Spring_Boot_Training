@@ -6869,3 +6869,938 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.rubypapae
 2024-07-10 01:58:53,109 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2024-07-10 01:58:53,113 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-07-10 01:58:53,113 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Worspace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 13:40:36,197 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-07-10 13:40:55,010 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-07-10 13:40:57,906 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter02:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter02\pom.xml.
+2024-07-10 13:41:00,736 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter01:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter01\pom.xml.
+2024-07-10 13:41:00,979 [Worker-3: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.rubypapaer:board-spring-boot-starter:jar:sources:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-07-10 13:41:01,239 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:01,254 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:01,257 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 13:41:01,287 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter02/src/main/java
+2024-07-10 13:41:01,288 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter02/src/main/resources
+2024-07-10 13:41:01,295 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter02/src/main/resources
+2024-07-10 13:41:01,302 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter02/src/test/java
+2024-07-10 13:41:01,302 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter02/src/test/resources
+2024-07-10 13:41:03,837 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 4.00 sec, update config takes 3.00 sec 
+2024-07-10 13:41:03,840 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-07-10 13:41:03,949 [Worker-11: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\board-spring-boot-starter\pom.xml.
+2024-07-10 13:41:04,864 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.rubypapaer:board-spring-boot-starter:jar:javadoc:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-07-10 13:41:05,333 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission3:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission3\pom.xml.
+2024-07-10 13:41:05,531 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission3:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission4\pom.xml.
+2024-07-10 13:41:05,621 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Mission1: edu.pnu:Mission1:0.0.1-SNAPSHOT with classifier  to /Mission1/target/classes
+2024-07-10 13:41:05,666 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission3:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission5\pom.xml.
+2024-07-10 13:41:05,739 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter01:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter01\pom.xml.
+2024-07-10 13:41:05,803 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter02:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter02\pom.xml.
+2024-07-10 13:41:05,879 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission1:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission1\pom.xml.
+2024-07-10 13:41:05,957 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission2:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission2\pom.xml.
+2024-07-10 13:41:06,047 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission3:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission4\pom.xml.
+2024-07-10 13:41:06,080 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Mission1: edu.pnu:Mission1:0.0.1-SNAPSHOT with classifier  to /Mission1/target/classes
+2024-07-10 13:41:06,935 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission3/src/main/java
+2024-07-10 13:41:06,935 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission3/src/main/resources
+2024-07-10 13:41:06,945 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission3/src/main/resources
+2024-07-10 13:41:06,961 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission3/src/test/java
+2024-07-10 13:41:06,962 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission3/src/test/resources
+2024-07-10 13:41:07,199 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\board-spring-boot-starter\pom.xml.
+2024-07-10 13:41:07,501 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.pnu:Mission3:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Mission5\pom.xml.
+2024-07-10 13:41:07,522 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:07,540 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:07,544 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter02\src\test\resources
+2024-07-10 13:41:07,766 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier  to /board-spring-boot-starter/target/classes
+2024-07-10 13:41:07,814 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission4/src/main/java
+2024-07-10 13:41:07,815 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission4/src/main/resources
+2024-07-10 13:41:07,821 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission4/src/main/resources
+2024-07-10 13:41:07,842 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission4/src/test/java
+2024-07-10 13:41:07,842 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission4/src/test/resources
+2024-07-10 13:41:07,995 [Worker-12: Update Maven projects configuration] ERROR o.e.m2e.jdt.internal.ModuleSupport - Mission1 does not exist
+org.eclipse.jdt.core.JavaModelException: Mission1 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:572)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:233)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaProject.getModuleDescription(JavaProject.java:3747)
+	at org.eclipse.m2e.jdt.internal.ModuleSupport.getModuleInfo(ModuleSupport.java:213)
+	at org.eclipse.m2e.jdt.internal.ModuleSupport.getModuleInfo(ModuleSupport.java:204)
+	at org.eclipse.m2e.jdt.internal.ModuleSupport.configureClasspath(ModuleSupport.java:133)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.configureClasspath(AbstractJavaProjectConfigurator.java:992)
+	at org.eclipse.m2e.jdt.internal.DefaultClasspathManagerDelegate.populateClasspath(DefaultClasspathManagerDelegate.java:67)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.getClasspath(BuildPathManager.java:239)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.getClasspath(BuildPathManager.java:360)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.getClasspath(BuildPathManager.java:342)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.getClasspath(BuildPathManager.java:367)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.updateClasspath(BuildPathManager.java:200)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.configure(AbstractJavaProjectConfigurator.java:194)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:127)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:506)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:500)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$4(ProjectConfigurationManager.java:426)
+	at java.base/java.util.Collection.removeIf(Collection.java:583)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:414)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-07-10 13:41:08,056 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter02:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter02\pom.xml.
+2024-07-10 13:41:08,096 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier  to /board-spring-boot-starter/target/classes
+2024-07-10 13:41:08,548 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission5/src/main/java
+2024-07-10 13:41:08,549 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission5/src/main/resources
+2024-07-10 13:41:08,552 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission5/src/main/resources
+2024-07-10 13:41:08,556 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission5/src/test/java
+2024-07-10 13:41:08,557 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission5/src/test/resources
+2024-07-10 13:41:08,910 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter01/src/main/java
+2024-07-10 13:41:08,910 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter01/src/main/resources
+2024-07-10 13:41:08,913 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter01/src/main/resources
+2024-07-10 13:41:08,917 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter01/src/test/java
+2024-07-10 13:41:08,917 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter01/src/test/resources
+2024-07-10 13:41:09,222 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter02/src/main/java
+2024-07-10 13:41:09,223 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter02/src/main/resources
+2024-07-10 13:41:09,223 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter02/src/main/resources
+2024-07-10 13:41:09,223 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter02/src/test/java
+2024-07-10 13:41:09,224 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter02/src/test/resources
+2024-07-10 13:41:09,683 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission1/src/main/java
+2024-07-10 13:41:09,683 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission1/src/main/resources
+2024-07-10 13:41:09,686 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission1/src/main/resources
+2024-07-10 13:41:09,691 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission1/src/test/java
+2024-07-10 13:41:09,691 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission1/src/test/resources
+2024-07-10 13:41:09,975 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission2/src/main/java
+2024-07-10 13:41:09,975 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission2/src/main/resources
+2024-07-10 13:41:09,977 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission2/src/main/resources
+2024-07-10 13:41:09,980 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Mission2/src/test/java
+2024-07-10 13:41:09,980 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Mission2/src/test/resources
+2024-07-10 13:41:10,268 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 7 poms: local refresh takes 0.00 sec, refresh facades takes 3.00 sec, update config takes 3.00 sec 
+2024-07-10 13:41:10,667 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:10,679 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:10,683 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 13:41:10,798 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:10,799 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:10,801 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter02\src\test\resources
+2024-07-10 13:41:10,999 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,014 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,017 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission1\src\test\resources
+2024-07-10 13:41:11,244 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,259 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,262 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission2\src\test\resources
+2024-07-10 13:41:11,484 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,500 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,504 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission3\src\test\resources
+2024-07-10 13:41:11,774 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,787 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,790 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission4\src\test\resources
+2024-07-10 13:41:11,895 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,917 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:11,921 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 13:41:12,754 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 13:41:12,754 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 13:41:12,768 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 13:41:12,769 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 13:41:14,252 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:14,254 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:14,256 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter02\src\test\resources
+2024-07-10 13:41:14,415 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 13:41:14,416 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 13:41:14,419 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 13:42:30,560 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 13:42:30,561 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 13:42:30,563 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 13:42:30,563 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 13:47:21,400 [Worker-4: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 13:47:21,452 [Worker-4: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 13:47:21,502 [Worker-4: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 14:19:09,803 [Worker-23: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter03:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter03\pom.xml.
+2024-07-10 14:19:10,082 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter03/src/main/java
+2024-07-10 14:19:10,083 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/main/resources
+2024-07-10 14:19:10,085 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/main/resources
+2024-07-10 14:19:10,091 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter03/src/test/java
+2024-07-10 14:19:10,091 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/test/resources
+2024-07-10 14:19:10,286 [Worker-23: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2024-07-10 14:19:10,288 [Worker-23: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-07-10 14:19:10,495 [Worker-23: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter03:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter03\pom.xml.
+2024-07-10 14:19:10,747 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter03/src/main/java
+2024-07-10 14:19:10,748 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/main/resources
+2024-07-10 14:19:10,748 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/main/resources
+2024-07-10 14:19:10,748 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter03/src/test/java
+2024-07-10 14:19:10,748 [Worker-23: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/test/resources
+2024-07-10 14:19:10,984 [Worker-23: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2024-07-10 14:19:11,353 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:19:11,362 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:19:11,365 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:22:02,055 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:22:02,055 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:22:02,057 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 14:22:12,951 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:22:12,951 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:22:12,953 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 14:32:41,090 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:32:41,091 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:32:41,093 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:33:30,971 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:33:30,972 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:33:30,974 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:34:02,047 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:34:02,048 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:34:02,049 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:34:24,821 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:34:24,822 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:34:24,823 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:37:32,105 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:37:32,106 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:37:32,107 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:38:36,211 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:38:36,212 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:38:36,214 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:39:21,472 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:21,473 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:21,474 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:39:25,257 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:25,257 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:25,259 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:39:39,519 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:39,520 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:39,522 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:39:51,133 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:51,134 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:39:51,135 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:40:22,276 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:40:22,276 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:40:22,278 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:40:24,888 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:40:24,888 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:40:24,890 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:40:37,945 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:40:37,946 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:40:37,948 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:42:08,180 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:42:08,183 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:42:08,185 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:43:49,924 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:43:49,927 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:43:49,928 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:44:22,453 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:44:22,456 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:44:22,458 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:44:47,527 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:44:47,529 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:44:47,531 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:47:25,436 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:47:25,439 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:47:25,441 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:55:13,386 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:55:13,386 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:55:13,388 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:55:33,824 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:55:33,825 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:55:33,826 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:57:00,143 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:57:00,144 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:57:00,146 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:57:55,548 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-07-10 14:57:58,595 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:57:58,610 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:57:58,615 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 14:57:59,714 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:57:59,727 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:57:59,732 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:58:02,146 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:58:02,156 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:02,159 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission1\src\test\resources
+2024-07-10 14:58:02,670 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:58:02,680 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:02,683 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission2\src\test\resources
+2024-07-10 14:58:03,235 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:58:03,245 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:03,248 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission3\src\test\resources
+2024-07-10 14:58:03,454 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:03,455 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:03,458 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 14:58:04,032 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Mission1: edu.pnu:Mission1:0.0.1-SNAPSHOT with classifier  to /Mission1/target/classes
+2024-07-10 14:58:04,110 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:58:04,120 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:04,123 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission4\src\test\resources
+2024-07-10 14:58:04,430 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 14:58:04,431 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 14:58:04,440 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 14:58:04,440 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 14:58:05,043 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier  to /board-spring-boot-starter/target/classes
+2024-07-10 14:58:05,132 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:58:05,144 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:05,148 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 14:58:05,612 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier  to /board-spring-boot-starter/target/classes
+2024-07-10 14:58:05,682 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 14:58:05,690 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 14:58:05,693 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter02\src\test\resources
+2024-07-10 15:02:08,263 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:02:08,264 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:02:08,267 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:09:23,344 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:09:23,345 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:09:23,347 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:10:19,553 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:10:19,554 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:10:19,555 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:10:42,660 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:10:42,660 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:10:42,662 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:11:39,978 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:11:39,979 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:11:39,981 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:12:04,305 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:12:04,306 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:12:04,307 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:12:22,052 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:12:22,053 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:12:22,055 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:13:19,612 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:13:19,612 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:13:19,614 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:13:42,046 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:13:42,047 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:13:42,048 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:15:27,796 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:15:27,797 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:15:27,799 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:15:46,856 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:15:46,856 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:15:46,858 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:19:26,592 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:19:26,596 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:19:26,600 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:20:33,888 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:20:33,891 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:20:33,893 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:20:49,049 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:20:49,052 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:20:49,054 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:20:56,025 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:20:56,028 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:20:56,030 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:22:52,109 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:22:52,120 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:22:52,123 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:25:02,209 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:25:02,210 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:25:02,212 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:25:56,612 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:25:56,620 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:25:56,624 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:26:12,415 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:26:12,418 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:26:12,420 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:26:17,284 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:26:17,286 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:26:17,288 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:28:46,584 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:28:46,585 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:28:46,587 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:30:19,638 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:30:19,641 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:30:19,643 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:30:20,669 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:30:20,672 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:30:20,674 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:30:43,490 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:30:43,499 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:30:43,501 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:30:53,741 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:30:53,751 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:30:53,754 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:30:59,912 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:30:59,915 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:30:59,916 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:31:16,387 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:31:16,389 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:31:16,391 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:31:26,431 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:31:26,434 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:31:26,436 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:31:28,314 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:31:28,316 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:31:28,318 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:31:48,830 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:31:48,839 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:31:48,841 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:31:51,509 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:31:51,518 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:31:51,520 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:31:58,394 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:31:58,403 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:31:58,405 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:32:58,222 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:32:58,225 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:32:58,227 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:33:38,121 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:33:38,124 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:33:38,126 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:33:43,959 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:33:43,962 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:33:43,964 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:34:33,024 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:34:33,025 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:34:33,026 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:37:56,631 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:37:56,642 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:37:56,646 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:38:04,537 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:38:04,540 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:38:04,542 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:39:18,024 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:39:18,027 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:39:18,028 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:39:47,298 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:39:47,300 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:39:47,302 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:42:08,505 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:42:08,507 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:42:08,509 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:42:13,994 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:42:13,996 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:42:13,998 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:44:14,001 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:44:14,004 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:44:14,005 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:44:17,836 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:44:17,839 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:44:17,841 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:49:29,478 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:49:29,481 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:49:29,483 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:50:08,511 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:50:08,514 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:50:08,516 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:50:16,139 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 15:50:16,141 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:50:16,143 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:50:44,104 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:50:44,105 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:50:44,107 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:51:26,476 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:51:26,477 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:51:26,479 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 15:54:28,246 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:54:28,246 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:54:28,248 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:54:44,984 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:54:44,985 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:54:44,987 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:56:28,688 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:56:28,688 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:56:28,690 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:56:33,214 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:56:33,214 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:56:33,216 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 15:59:19,616 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:59:19,617 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 15:59:19,619 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:01:03,554 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:01:03,554 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:01:03,556 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:03:22,235 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:03:22,238 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:03:22,240 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:03:26,406 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:03:26,409 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:03:26,411 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:04:07,931 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:04:07,934 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:04:07,935 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:04:32,097 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:04:32,100 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:04:32,102 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:04:54,457 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:04:54,460 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:04:54,462 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:05:06,418 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:05:06,421 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:05:06,422 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:05:31,819 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:05:31,837 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:05:31,840 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:05:36,028 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:05:36,031 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:05:36,032 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:06:02,233 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:06:02,233 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:06:02,235 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:07:57,598 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:07:57,600 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:07:57,602 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:08:05,345 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:08:05,347 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:08:05,349 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:09:30,533 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:09:30,537 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:09:30,539 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:09:33,715 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:09:33,718 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:09:33,720 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:09:39,724 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:09:39,727 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:09:39,730 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:09:55,347 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:09:55,350 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:09:55,351 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:09:58,369 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:09:58,372 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:09:58,374 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:10:11,592 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:10:11,594 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:10:11,596 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:10:22,524 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:10:22,527 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:10:22,529 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:10:48,707 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:10:48,709 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:10:48,711 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:10:54,640 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:10:54,641 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:10:54,642 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:11:18,226 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:18,227 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:18,228 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:11:21,606 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:21,606 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:21,608 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:11:24,948 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:24,948 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:24,950 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:11:26,646 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:26,647 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:11:26,648 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:12:22,400 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:12:22,401 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:12:22,403 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:13:13,152 [Worker-77: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter03:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter03\pom.xml.
+2024-07-10 16:13:13,540 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:13:13,541 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:13:13,544 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:13:14,690 [Worker-75: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-07-10 16:13:14,894 [Worker-75: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter03:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter03\pom.xml.
+2024-07-10 16:13:15,375 [Worker-75: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter03/src/main/java
+2024-07-10 16:13:15,376 [Worker-75: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/main/resources
+2024-07-10 16:13:15,377 [Worker-75: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/main/resources
+2024-07-10 16:13:15,377 [Worker-75: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Chapter03/src/test/java
+2024-07-10 16:13:15,378 [Worker-75: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Chapter03/src/test/resources
+2024-07-10 16:13:15,572 [Worker-75: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2024-07-10 16:13:15,833 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:13:15,841 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:13:15,843 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:14:43,948 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:14:43,950 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:14:43,952 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:14:58,386 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:14:58,389 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:14:58,390 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:15:09,350 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:15:09,352 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:15:09,354 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:15:25,128 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:15:25,130 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:15:25,132 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:16:04,741 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:16:04,744 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:16:04,746 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:16:08,365 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:16:08,368 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:16:08,370 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:17:04,955 [Worker-78: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rubypaper:Chapter03:0.0.1-SNAPSHOT @ C:\WorkSpace-sts4\Chapter03\pom.xml.
+2024-07-10 16:17:05,117 [Worker-78: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier  to /board-spring-boot-starter/target/classes
+2024-07-10 16:17:05,285 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:17:05,286 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:17:05,289 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:17:06,452 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:17:06,462 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:17:06,463 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:17:15,238 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:17:15,240 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:17:15,242 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:18:29,384 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:18:29,387 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:18:29,388 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:18:40,524 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:18:40,527 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:18:40,528 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:18:43,693 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:18:43,695 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:18:43,697 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:18:59,554 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:18:59,557 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:18:59,558 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:19:03,245 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:19:03,248 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:19:03,249 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:19:14,279 [Worker-79: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:19:14,382 [Worker-79: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:19:14,472 [Worker-79: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:20:50,840 [Worker-67: Launching Chapter03 - Chapter03Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:20:50,890 [Worker-67: Launching Chapter03 - Chapter03Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:20:50,939 [Worker-67: Launching Chapter03 - Chapter03Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:21:14,388 [Worker-84: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:21:14,489 [Worker-84: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:21:14,579 [Worker-84: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:24:29,840 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:24:29,841 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:24:29,843 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:24:34,008 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:24:34,009 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:24:34,011 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:30:43,289 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:30:43,291 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:30:43,293 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:30:47,586 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:30:47,588 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:30:47,590 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:31:18,471 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:31:18,473 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:31:18,475 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:31:24,413 [Worker-91: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:31:24,515 [Worker-91: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:31:24,606 [Worker-91: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:31:59,344 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:31:59,348 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:31:59,351 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:32:03,173 [Worker-92: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:32:03,277 [Worker-92: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:32:03,369 [Worker-92: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:35:19,367 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:35:19,369 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:35:19,371 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:35:25,480 [Worker-97: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:35:25,581 [Worker-97: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:35:25,673 [Worker-97: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:38:50,124 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:38:50,127 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:38:50,128 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:39:11,338 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:39:11,340 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:39:11,341 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter03\src\test\resources
+2024-07-10 16:43:32,170 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313 [359])
+2024-07-10 16:43:32,171 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313
+2024-07-10 16:43:32,171 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\aopalliance-1.0.jar
+2024-07-10 16:43:32,171 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\guice-5.1.0.jar
+2024-07-10 16:43:32,171 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\httpclient-4.5.14.jar
+2024-07-10 16:43:32,171 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\httpcore-4.4.16.jar
+2024-07-10 16:43:32,171 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\jansi-2.4.1.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\jcl-over-slf4j-1.7.36.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-artifact-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-builder-support-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-compat-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-core-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-embedder-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-model-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-model-builder-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-plugin-api-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-repository-metadata-3.9.7.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-api-1.9.20.jar
+2024-07-10 16:43:32,172 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-connector-basic-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-impl-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-named-locks-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-provider-3.9.7.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-spi-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-transport-file-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-transport-http-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-transport-wagon-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-util-1.9.20.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-settings-3.9.7.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-settings-builder-3.9.7.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-shared-utils-3.4.2.jar
+2024-07-10 16:43:32,173 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-build-api-0.0.7.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-build-api-1.2.0.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-cipher-2.0.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-classworlds-2.8.0.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-component-annotations-2.1.0.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-interpolation-1.27.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-sec-dispatcher-2.0.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-utils-3.5.1.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-file-3.5.3.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-http-3.5.3.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-http-shared-3.5.3.jar
+2024-07-10 16:43:32,174 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-provider-api-3.5.3.jar
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.2.0.jre [29])
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\com.google.guava_33.2.0.jre.jar
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.13 [592])
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\slf4j.api_2.0.13.jar
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [44])
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2024-07-10 16:43:32,175 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [53])
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.8.0 [76])
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.apache.commons.cli_1.8.0.jar
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.14.0 [82])
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.apache.commons.lang3_3.14.0.jar
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [30])
+2024-07-10 16:43:32,176 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\com.google.guava.failureaccess_1.0.2.jar
+2024-07-10 16:43:32,179 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\WorkSpace-sts4\Chapter01":
+2024-07-10 16:43:32,179 [Worker-95: Launching Executing install in C__WorkSpace-sts4_Chapter01] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2024-07-10 16:44:45,114 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:44:45,115 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:44:45,116 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 16:45:23,693 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:45:23,693 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:45:23,695 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Chapter01\src\test\resources
+2024-07-10 16:45:43,499 [Worker-99: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:45:43,603 [Worker-99: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:45:43,692 [Worker-99: Launching MemberDaoTest] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:53:55,196 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:53:55,201 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:53:55,203 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:53:58,524 [Worker-95: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:53:58,576 [Worker-95: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:53:58,626 [Worker-95: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 16:55:25,813 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:55:25,818 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:55:25,819 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:55:50,742 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:55:50,744 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:55:50,746 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:57:01,876 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:57:01,878 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:57:01,880 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:57:20,049 [Worker-95: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:57:20,056 [Worker-95: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:57:20,057 [Worker-95: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:57:28,240 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:57:28,242 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:57:28,243 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:57:30,353 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:57:30,355 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:57:30,357 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 16:59:38,936 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:59:38,938 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:59:38,940 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission4\src\test\resources
+2024-07-10 16:59:53,038 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:59:53,041 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:59:53,043 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission4\src\test\resources
+2024-07-10 16:59:57,010 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 16:59:57,012 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 16:59:57,014 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission4\src\test\resources
+2024-07-10 17:00:09,857 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:00:09,860 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:00:09,862 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission4\src\test\resources
+2024-07-10 17:07:00,969 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:07:00,972 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:07:00,973 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:07:09,238 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:07:09,241 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:07:09,242 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:07:19,466 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:07:19,468 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:07:19,470 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:08:45,109 [Worker-112: Launching Mission4 - Mission4Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Mission1: edu.pnu:Mission1:0.0.1-SNAPSHOT with classifier null to /Mission1/target/classes
+2024-07-10 17:08:45,159 [Worker-112: Launching Mission4 - Mission4Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Mission1: edu.pnu:Mission1:0.0.1-SNAPSHOT with classifier null to /Mission1/target/classes
+2024-07-10 17:08:45,209 [Worker-112: Launching Mission4 - Mission4Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Mission1: edu.pnu:Mission1:0.0.1-SNAPSHOT with classifier null to /Mission1/target/classes
+2024-07-10 17:12:11,932 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:12:11,935 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:12:11,936 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:12:18,589 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:12:18,591 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:12:18,593 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:12:21,874 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:12:21,876 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:12:21,878 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:13:14,420 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:13:14,423 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:13:14,425 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:14:05,883 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:14:05,885 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:14:05,887 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:15:35,958 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:15:35,960 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:15:35,962 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:15:41,218 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:15:41,220 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:15:41,222 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:16:21,228 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:16:21,230 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:16:21,232 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:17:59,957 [Worker-117: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:18:00,008 [Worker-117: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:18:00,059 [Worker-117: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:21:31,529 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:21:31,531 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:21:31,533 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:22:13,945 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:22:13,947 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:22:13,949 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:22:21,405 [Worker-103: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:22:21,455 [Worker-103: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:22:21,505 [Worker-103: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:25:13,695 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:25:13,697 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:25:13,699 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:25:35,447 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:25:35,450 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:25:35,451 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:25:43,925 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:25:43,928 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:25:43,930 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:26:13,360 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:26:13,363 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:26:13,365 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:26:20,103 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:26:20,105 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:26:20,107 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:26:27,861 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:26:27,863 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:26:27,865 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:31:53,399 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:31:53,402 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:31:53,403 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:31:56,891 [Worker-124: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:31:56,893 [Worker-124: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:31:56,895 [Worker-124: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:33:13,388 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:33:13,390 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:33:13,392 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:33:18,219 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:33:18,222 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:33:18,224 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:33:48,495 [Worker-126: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:33:48,545 [Worker-126: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:33:48,594 [Worker-126: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:39:36,330 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:36,331 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:39:36,332 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:36,332 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:39:44,429 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:44,430 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:39:44,431 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:44,431 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:39:49,906 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:49,906 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:39:49,907 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:49,907 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:39:56,599 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:56,599 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:39:56,600 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:39:56,601 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:40:12,932 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:40:12,933 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:40:12,934 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:40:12,934 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:40:46,952 [Worker-132: Launching Mission5 - Mission5Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:40:46,956 [Worker-132: Launching Mission5 - Mission5Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:40:46,958 [Worker-132: Launching Mission5 - Mission5Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources
+2024-07-10 17:40:47,026 [Worker-132: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:40:47,077 [Worker-132: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:40:47,128 [Worker-132: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:43:04,842 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:43:04,843 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:43:04,843 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:43:04,843 [Worker-134: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:43:12,665 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:43:12,665 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:43:12,666 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:43:12,666 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:43:23,654 [Worker-139: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:43:23,702 [Worker-139: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:43:23,753 [Worker-139: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:44:57,732 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:44:57,733 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:44:57,734 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:44:57,734 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:45:03,926 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:45:03,927 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:45:03,928 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:45:03,928 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:45:09,659 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:09,709 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:09,757 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:41,696 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:45:41,696 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:45:41,697 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:45:41,697 [Worker-136: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:45:46,313 [Worker-138: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:46,365 [Worker-138: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:46,416 [Worker-138: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:46,716 [Worker-138: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:46,767 [Worker-138: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:45:46,817 [Worker-138: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:46:05,707 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:46:05,708 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:46:05,708 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:46:05,708 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:46:07,565 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:46:07,615 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:46:07,665 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:46:17,530 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:46:17,530 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:46:17,531 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:46:17,531 [Worker-135: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:46:49,083 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:46:49,083 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:46:49,084 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:46:49,084 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:46:52,158 [Worker-141: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:46:52,209 [Worker-141: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:46:52,260 [Worker-141: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:52:38,425 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:38,425 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:52:38,426 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:38,426 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:52:42,277 [Worker-146: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:42,278 [Worker-146: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:52:42,278 [Worker-146: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:42,279 [Worker-146: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:52:44,472 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:44,473 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:52:44,474 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:44,474 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:52:51,616 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:51,617 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-07-10 17:52:51,618 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-07-10 17:52:51,618 [Worker-139: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WorkSpace-sts4\board-spring-boot-starter\src\test\resources
+2024-07-10 17:53:02,422 [Worker-145: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:53:02,473 [Worker-145: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:53:02,523 [Worker-145: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:54:34,707 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:54:34,756 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:54:34,804 [Worker-140: Launching Mission5 - Mission5Application] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/board-spring-boot-starter: com.rubypapaer:board-spring-boot-starter:0.0.1-SNAPSHOT with classifier null to /board-spring-boot-starter/target/classes
+2024-07-10 17:57:36,676 [Worker-149: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-10 17:57:36,680 [Worker-149: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-10 17:57:36,681 [Worker-149: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\WorkSpace-sts4\Mission5\src\test\resources

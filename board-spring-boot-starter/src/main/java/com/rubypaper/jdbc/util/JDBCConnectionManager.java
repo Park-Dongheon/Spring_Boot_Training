@@ -2,6 +2,7 @@ package com.rubypaper.jdbc.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class JDBCConnectionManager {
 	private String url;
@@ -25,13 +26,8 @@ public class JDBCConnectionManager {
 		return "JDBCConnectionManager [url=" + url + ", username=" + username + ", password=" + password + "]";
 	}
 	
-	public Connection getConnection() {
-		try {
-			return DriverManager.getConnection(url, username, password);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return null;
+	public Connection getConnection() throws SQLException {
+		return DriverManager.getConnection(url, username, password);
 	}
 	
 }
