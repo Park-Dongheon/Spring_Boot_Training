@@ -1,9 +1,5 @@
 package com.rubypaper.jdbc.config;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,13 +20,5 @@ public class BoardAutoConfiguration {
 		manager.setPassword("tiger");
 		return manager;	// 설정된 JDBCConnectionManager 객체를 반환하여 스프링 컨테이너에 등록
 	}
-	
-    @Bean
-    Connection getDataConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/musthave";
-        String username = "scott";
-        String password = "tiger";
-        return DriverManager.getConnection(url, username, password);
-    }
     
 }

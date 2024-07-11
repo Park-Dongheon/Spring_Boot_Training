@@ -21,15 +21,16 @@ import lombok.RequiredArgsConstructor;
 @Repository
 @RequiredArgsConstructor
 public class MemberDAO {
-	private final Connection con;	// 이 필드는 BoardAutoConfiguration에서 설정한 빈으로 주입
-	
+	private final JDBCConnectionManager jdbcConnectionManager;
+		
 	public Map<String, Object> getAllMembers() throws SQLException, ClassNotFoundException {
 		Map<String, Object> map = new HashMap<>();
 		List<MemberDTO> list = new ArrayList<MemberDTO>();
 		
 		String query = "SELECT * FROM member";
 		
-        try (Statement st = con.createStatement();
+        try (Connection con = jdbcConnectionManager.getConnection();
+        	Statement st = con.createStatement();
         	ResultSet rs = st.executeQuery(query)) {
             while (rs.next()) {
                 list.add(MemberDTO.builder()
@@ -58,7 +59,8 @@ public class MemberDAO {
 		String query = "INSERT INTO member (pass, name) VALUES (?, ?); ";
 		
 		int result = 0;
-		try (PreparedStatement ps = con.prepareStatement(query)) {
+		try (Connection con = jdbcConnectionManager.getConnection();
+			PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setString(1, memberDTO.getPass());
 			ps.setString(2, memberDTO.getName());
 			
@@ -84,7 +86,8 @@ public class MemberDAO {
 		String query = "UPDATE member SET pass = ?, name = ? WHERE id = ?; ";
 		
 		int result = 0;
-		try (PreparedStatement ps = con.prepareStatement(query)) {
+		try (Connection con = jdbcConnectionManager.getConnection();
+			PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setString(1, memberDTO.getPass());
 			ps.setString(2, memberDTO.getName());
 			ps.setInt(3, memberDTO.getId());
@@ -111,7 +114,8 @@ public class MemberDAO {
 		String query = "DELETE FROM member WHERE id = ?; ";
 		
 		int deleteRows = 0;
-		try (PreparedStatement ps = con.prepareStatement(query)) {
+		try (Connection con = jdbcConnectionManager.getConnection();
+			PreparedStatement ps = con.prepareStatement(query)) {
 			ps.setInt(1, id);
 			deleteRows = ps.executeUpdate();
 			

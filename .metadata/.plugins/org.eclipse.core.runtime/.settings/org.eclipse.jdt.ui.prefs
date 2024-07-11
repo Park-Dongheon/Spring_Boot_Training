@@ -1,6 +1,6 @@
 breadcrumb.org.eclipse.jdt.ui.JavaPerspective=true
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="edu.pnu.domain.MemberDTO"><rhs name\="edu.pnu.domain.MemberDTO"/></lhs></history>
-content_assist_number_of_computers=14
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="edu.pnu.domain.MemberDTO"><rhs name\="edu.pnu.domain.MemberDTO"/></lhs><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="javax.persistence.GenerationType"/></lhs></history>
+content_assist_number_of_computers=16
 eclipse.preferences.version=1
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
