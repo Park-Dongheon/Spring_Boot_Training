@@ -47,7 +47,7 @@ public class TestController {
 		
 		if (board.getTitle() != null) b.setTitle(board.getTitle());
 		if (board.getContent() != null) b.setContent(board.getContent());
-		if (board.getWriter() != null) b.setWriter(board.getWriter());		
+//		if (board.getWriter() != null) b.setWriter(board.getWriter());		
 		b.setCreateDate(new Date());
 		b.setCnt((long)(Math.random() * 100));
 		return boardRepo.save(b);
