@@ -25,7 +25,7 @@ public interface BoardRepository extends JpaRepository<Board, Long> { // 인터�
 //	@Query("SELECT b FROM Board b WHERE b.title LIKE %?1% ORDER BY b.seq DESC")			// 사용자 입력값이 '?1' 에 바인딩
 //	List<Board> queryAnnotationTest1(String searchKeyword);
 	
-//	@Query("SELECT b.seq, b.title, b.writer, b.createDate FROM Board b "
+//	@Query("SELECT b.seq, b.title, b.writer, b.createDate, b.cnt FROM Board b "
 //			+ "WHERE b.title LIKE %?1% ORDER BY b.seq DESC ")
 //	List<Object[]> queryAnnotationTest2(@Param("searchKeyword") String searchKeyword);		// 메서드 매개변수와 쿼리 파라미터를 매핑, searchKeyword 매개변수가 쿼리에서 사용될 파라미터임
 	

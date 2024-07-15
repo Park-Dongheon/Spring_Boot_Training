@@ -28,7 +28,6 @@ public class DataInit2 implements ApplicationRunner {		// 서버 구동 시 빈 
 				.password("member111")
 				.name("둘리")
 				.role("User").build();
-		
 		memberRepo.save(m1);
 		
 		Member m2 = Member.builder()

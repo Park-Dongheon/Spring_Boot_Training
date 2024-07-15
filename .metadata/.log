@@ -11289,3 +11289,602 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 11:36:19.030
 !MESSAGE Classpath changed for project: Chapter05
 >>>>>>> a1dfafc3196be881904dcaa4ca22051d89f04772
+!SESSION 2024-07-15 23:32:22.714 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-15 23:33:08.087
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-15 23:33:27.034
+!MESSAGE Logback config file: C:\Workspace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2024-07-15 23:33:27.651
+!MESSAGE Unable to load resource file:/C:/Workspace-sts4/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: file:/C:/Workspace-sts4/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; systemId: file:/C:/Workspace-sts4/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; lineNumber: 2; columnNumber: 2; 문서에서 루트 요소 앞에 오는 마크업은 올바른 형식이어야 합니다.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.getResource(ResourceHandler.java:287)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadResource(ResourceHandler.java:263)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:166)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:368)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:244)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:568)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: file:/C:/Workspace-sts4/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; systemId: file:/C:/Workspace-sts4/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; lineNumber: 2; columnNumber: 2; 문서에서 루트 요소 앞에 오는 마크업은 올바른 형식이어야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:260)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 21 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2024-07-15 23:33:27.651
+!MESSAGE The persisted application model has no top-level window. Reinitializing with the default application model.
+!STACK 0
+java.lang.Exception
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:171)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:368)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:244)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:568)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.ui 2 0 2024-07-15 23:33:27.854
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-15 23:33:27.854
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-15 23:33:28.370
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-15 23:33:28.370
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-15 23:33:37.633
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dongh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.351
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.352
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.416
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.499
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.550
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.599
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.690
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 23:33:38.702
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Workspace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721054018700
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.703
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 23:33:38.726
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6160
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.741
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.831
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.878
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:33:38.900
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-15 23:36:03.608
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA orm.xml mapping file 3.0': [GenericOrmXmlDefinition3_0, GenericOrmXmlDefinition3_1]
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-15 23:36:03.609
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA persistence.xml file 3.0': [GenericPersistenceXmlDefinition3_0, GenericPersistenceXmlDefinition3_1]
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:31.771
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:33.488
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:33.489
+!MESSAGE Classpath changed for project: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:33.490
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:33.491
+!MESSAGE Classpath changed for project: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:35.136
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:35.137
+!MESSAGE Classpath changed for project: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:35.139
+!MESSAGE Classpath changed for project: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:36.263
+!MESSAGE Classpath changed for project: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:36.264
+!MESSAGE Classpath changed for project: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:37.401
+!MESSAGE Classpath changed for project: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:45.605
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:47.178
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:47.179
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:47.179
+!MESSAGE Classpath changed for project: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:47.180
+!MESSAGE Classpath changed for project: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:48.738
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:48.739
+!MESSAGE Classpath changed for project: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:48.740
+!MESSAGE Classpath changed for project: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:48.740
+!MESSAGE Classpath changed for project: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:49.203
+!MESSAGE Classpath changed for project: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:50.955
+!MESSAGE Classpath changed for project: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:50.956
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:36:51.183
+!MESSAGE Classpath changed for project: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:37:42.770
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:37:42.776
+!MESSAGE Boot project ADDED: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:37:44.331
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:37:45.144
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.eclipse.ui.navigator 2 0 2024-07-15 23:37:50.159
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-07-15 23:37:50.283
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; 요소 콘텐츠는 올바른 형식의 문자 데이터 또는 마크업으로 구성되어야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2589)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2679)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.restoreLaunchHistory(LaunchConfigurationManager.java:497)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.loadLaunchHistories(LaunchConfigurationManager.java:1055)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getLaunchHistory(LaunchConfigurationManager.java:1027)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.internalGetHistory(AbstractLaunchHistoryAction.java:547)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.getToolTip(AbstractLaunchHistoryAction.java:238)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:40:15.527
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:40:18.145
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:40:38.975
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-07-15 23:45:51.664
+!MESSAGE Could not resolve completion items due to timeout after 500 milliseconds in `completionItem/resolve`
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.resolveItem(LSCompletionProposal.java:365)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:331)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-07-15 23:45:51.967
+!MESSAGE Builder must not be set
+!STACK 0
+java.lang.IllegalStateException: Builder must not be set
+	at org.eclipse.mylyn.wikitext.parser.MarkupParser.parseToHtml(MarkupParser.java:114)
+	at org.eclipse.lsp4e.LSPEclipseUtils.lambda$29(LSPEclipseUtils.java:1440)
+	at org.eclipse.lsp4j.jsonrpc.messages.Either.map(Either.java:75)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getHtmlDocString(LSPEclipseUtils.java:1429)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:342)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-15 23:51:08.405
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveBundles(ProfileBundleContainer.java:115)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:386)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:568)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:649)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:572)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveBundles(ProfileBundleContainer.java:115)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:386)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:568)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:649)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:572)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2024-07-15 23:51:24.277 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-15 23:51:28.943
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-15 23:51:32.408
+!MESSAGE Logback config file: C:\Workspace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-07-15 23:51:33.060
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-15 23:51:33.060
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-15 23:51:33.532
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-15 23:51:33.532
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-15 23:51:39.292
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dongh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.345
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.347
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.473
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.476
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.478
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.479
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.482
+!MESSAGE Boot project ADDED: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.504
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.516
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 23:51:39.523
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Workspace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721055099518
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.524
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.529
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.540
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.551
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 23:51:39.566
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12724
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-15 23:51:39.568
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-15 23:52:35.995
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA orm.xml mapping file 3.0': [GenericOrmXmlDefinition3_0, GenericOrmXmlDefinition3_1]
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-15 23:52:35.996
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA persistence.xml file 3.0': [GenericPersistenceXmlDefinition3_0, GenericPersistenceXmlDefinition3_1]
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-07-15 23:52:44.481
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; 요소 콘텐츠는 올바른 형식의 문자 데이터 또는 마크업으로 구성되어야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2589)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2679)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.restoreLaunchHistory(LaunchConfigurationManager.java:497)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.loadLaunchHistories(LaunchConfigurationManager.java:1055)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getLaunchHistory(LaunchConfigurationManager.java:1027)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.internalGetHistory(AbstractLaunchHistoryAction.java:547)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.getToolTip(AbstractLaunchHistoryAction.java:238)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-07-16 00:43:41.729
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-16 01:03:03.142
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more
+Root exception:
+java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more

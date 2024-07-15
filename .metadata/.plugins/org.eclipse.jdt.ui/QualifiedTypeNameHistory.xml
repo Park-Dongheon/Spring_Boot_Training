@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.pnu.domain.MemberDTO"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration"/>
     <fullyQualifiedTypeName name="ch.qos.logback.core.net.SyslogOutputStream"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="edu.pnu.service.MemberService"/>
@@ -30,34 +28,36 @@
     <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="lombok.Builder"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Temporal"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.TestMethodOrder"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.ClassOrderer.OrderAnnotation"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
     <fullyQualifiedTypeName name="org.springframework.boot.ApplicationRunner"/>
     <fullyQualifiedTypeName name="com.rubypaper.persistence.BoardRepository"/>
-    <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="com.rubypaper.domain.Board"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.data.querydsl.QuerydslPredicateExecutor"/>
     <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
     <fullyQualifiedTypeName name="com.querydsl.core.BooleanBuilder"/>
     <fullyQualifiedTypeName name="com.rubypaper.domain.QBoard"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
-    <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Temporal"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+    <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.rubypaper.domain.Member"/>
 </qualifiedTypeNameHistroy>
