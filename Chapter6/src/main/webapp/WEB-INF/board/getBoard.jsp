@@ -43,7 +43,7 @@
 </table>
 </form>
 <hr>
-<a href="insertBoardView">글등록</a>&nbsp;&nbsp;&nbsp;
+<a href="insertBoard">글등록</a>&nbsp;&nbsp;&nbsp;
 <a href="deleteBoard?seq=${board.seq}">글삭제</a>&nbsp;&nbsp;&nbsp;
 <a href="getBoardList">글목록</a>
 </center>
