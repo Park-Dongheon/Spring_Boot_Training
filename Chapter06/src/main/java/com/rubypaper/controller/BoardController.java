@@ -42,7 +42,7 @@ public class BoardController {
 //	}
 
 	@ModelAttribute("member")
-	public Member getMember() {
+	public Member setMember() {
 		return new Member();
 	}
 	
@@ -60,36 +60,58 @@ public class BoardController {
 	}
 
 	@GetMapping("/insertBoard")
-	public String insertBoardView() {
+	public String insertBoardView(@ModelAttribute("member") Member member) {
+		
+		if (member.getId() == null) {
+			return "redirect:login";
+		}
+		
 		return "insertBoard";
 	}
 
 	@PostMapping("/insertBoard")
-	public String insertBoard(Board board) {
+	public String insertBoard(@ModelAttribute("member") Member member, Board board) {
+		
+		if (member.getId() == null) {
+			return "redirect:login";
+		}
+		
 		boardService.insertBoard(board);
 		return "redirect:getBoardList";
 	}
 
 	@GetMapping("/getBoard")
-	public String getBoard(Board board, Model model) {
+	public String getBoard(@ModelAttribute("member") Member member, Board board, Model model) {
+		
+		if (member.getId() == null) {
+			return "redirect:login";
+		}
+		
 		model.addAttribute("board", boardService.getBoard(board));
 		return "getBoard";
 	}
 
 	@PostMapping("/updateBoard")
-	public String updateBoard(Board board) {
+	public String updateBoard(@ModelAttribute("member") Member member, Board board) {
+		
+		if (member.getId() == null) {
+			return "redirect:login";
+		}
+		
 		boardService.updateBoard(board);
 		return "redirect:getBoardList";
 	}
 
 	@GetMapping("/deleteBoard")
-	public String deleteBoard(Board board) {
+	public String deleteBoard(@ModelAttribute("member") Member member, Board board) {
+		
+		if (member.getId() == null) {
+			return "redirect:login";
+		}
+		
 		boardService.deleteBoard(board);
 		return "forward:getBoardList";
 	}
 	
-	
-	
-
 
 }

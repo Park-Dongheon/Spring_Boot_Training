@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import com.rubypaper.domain.Member;
 import com.rubypaper.service.MemberService;
@@ -22,10 +23,8 @@ public class LoginController {
 
 	@GetMapping("/login")
 	public void loginView() {
-		
 	}
 	
-//	@RequestMapping(value = "/getBoardList", method = {RequestMethod.GET,RequestMethod.POST})
 	@PostMapping("/login")
 	public String login(Member member, Model model) {
 		Member findMember = memberService.getMember(member);
@@ -37,4 +36,11 @@ public class LoginController {
 			return "redirect:login";
 		}
 	}
+	
+	@GetMapping("/logout")
+	public String logout(SessionStatus status) {
+		status.setComplete();
+		return "redirect:index.html";
+	}
+	
 }

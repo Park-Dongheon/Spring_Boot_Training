@@ -6,7 +6,7 @@
 </head>
 <body th:align="center">
 <h1>게시글 상세</h1>
-<form th:action="@{updateBoard}" method="post">
+<form th:action="@{/updateBoard}" method="post">
 <input name="seq" type="hidden" th:value="${board.seq}">
 <table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
 	<tr>
@@ -38,7 +38,8 @@
 </table>
 </form>
 <a th:href="@{/insertBoard}">글등록</a>&nbsp;&nbsp;&nbsp;
-<a th:href="@{/deleteBoard(seq=${board.seq})}">글삭제</a>&nbsp;&nbsp;&nbsp;
+<a th:if="${session['member'].role == 'ROLE_ADMIN'}" 
+   th:href="@{/deleteBoard(seq=${board.seq})}">글삭제</a>&nbsp;&nbsp;&nbsp;
 <a th:href="@{/getBoardList}">글목록</a>
 </body>
 </html>

@@ -6,7 +6,7 @@
 </head>
 <body th:align="center">
 <h1>게시글 등록</h1>
-<form th:action="insertBoard" method="post">
+<form th:action="@{/insertBoard}" method="post">
 <table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
 	<tr>
 		<td bgcolor="orange" th:text="제목" width="80"></td>
