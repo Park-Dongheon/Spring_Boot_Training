@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(Exception.class)
 	public String handleException(Exception exception, Model model) {
-		model.addAttribute("exception", exception);
+		model.addAttribute("exception", exception.getMessage());
 		return "/errors/globalError";
 	}
 	

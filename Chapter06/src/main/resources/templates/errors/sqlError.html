@@ -8,10 +8,10 @@
 <a th:href="@{/}"> 메인 화면으로 </a><hr>
 <table>
 <tr>
-	<th bgcolor="red" align="left">예외 메시지 : [[${exception.message}]]</th>
+	<th bgcolor="red" align="left">예외 메시지 : [[${exception}]]</th>
 </tr>
 
-<tr th:each="trace : ${exception.stackTrace}">
+<tr th:each="trace : ${stackTrace}">
 	<td th:text="${trace}">
 </tr>
 

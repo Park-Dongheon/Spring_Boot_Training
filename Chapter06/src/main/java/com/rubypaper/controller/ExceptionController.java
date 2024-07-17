@@ -30,7 +30,7 @@ public class ExceptionController {
 	
 	@ExceptionHandler(SQLException.class)
 	public String numberFormatError(SQLException exception, Model model) {
-		model.addAttribute("exception", exception);
+		model.addAttribute("exception", exception.getMessage());
 		return "/errors/sqlError";
 	}
 	
