@@ -1,11 +1,14 @@
 package edu.pnu.controll;
 
+import java.security.Principal;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -37,22 +40,31 @@ public class LoginController {
 	// 로그인 세션 정보 확인용 URL
 	@GetMapping("/auth")
 	public @ResponseBody ResponseEntity<?> auth(@AuthenticationPrincipal User user) {
-	if (user == null) {
-	return ResponseEntity.ok("로그인 상태가 아닙니다.");
-	}
-	return ResponseEntity.ok(user);
+		if (user == null) {
+			return ResponseEntity.ok("로그인 상태가 아닙니다.");
+		}
+		return ResponseEntity.ok(user);
 	}
 	
 	@GetMapping("/join")
-	public void join(Model model) {
-		model.addAttribute(new Member());
+	public String join(Model model) {
+		model.addAttribute("member", new Member() );
 		System.out.println("join 요청입니다.");
+		return "join";
 	}
 	
 	@PostMapping("/join")
-	public String joinProc(Member member) {
+	public String joinProc(Model model, @ModelAttribute Member member) {
+		
 		memberService.save(member);
-		return "welcome";
+		model.addAttribute("exception", member.getUsername());
+		return "redirect:welcome";
 	}
+	
+    @GetMapping("/welcome")
+    public String welcome(Model model, Member member) {
+    	
+        return "welcome";
+    }
 	 
 }

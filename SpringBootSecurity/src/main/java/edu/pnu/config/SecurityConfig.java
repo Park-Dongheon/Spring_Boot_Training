@@ -13,7 +13,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
 	@Bean
-	SecurityFilterChain filterChain(HttpSecurity http) throws Exception {	// 접근 권한 설정
+	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http.authorizeHttpRequests(security -> security
 				.requestMatchers("/member/**").authenticated()
 				.requestMatchers("/manager/**").hasAnyRole("MANAGER","ADMIN")
@@ -23,9 +23,14 @@ public class SecurityConfig {
 		http.csrf(cf -> cf.disable());
 		
 		http.formLogin(form -> 
-			form.loginPage("/login")
-				.defaultSuccessUrl("/loginSuccess", true)
-		);
+		form.loginPage("/login")
+		.defaultSuccessUrl("/loginSuccess", true)
+				);
+		
+		http.logout(logout -> logout
+				.invalidateHttpSession(true)
+				.deleteCookies("JSESSIONID")
+				.logoutSuccessUrl("/login"));
 		
 		http.exceptionHandling(ex -> ex.accessDeniedPage("/accessDenied"));
 		
@@ -45,17 +50,6 @@ public class SecurityConfig {
 //			.password("{noop}abcd")
 //			.roles("ADMIN");
 //	}
-	
-	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		
-		http.logout(logout -> logout
-				.invalidateHttpSession(true)
-				.deleteCookies("JSESSIONID")
-				.logoutSuccessUrl("/login"));
-		
-		
-		return http.build();
-	}
 	
 	@Bean
 	PasswordEncoder passwordEncoder() {

@@ -3,55 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <title>시큐리티 테스트</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        .info {
-            margin-top: 20px;
-        }
-        .info div {
-            margin-bottom: 10px;
-        }
-        .info div span {
-            font-weight: bold;
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body th:align="center">
-	<h2>회원가입</h2>
-		 <form action="/welcome" method="post">
-			 <table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
-				 <tr>
-				 	<td bgcolor="orange"><label for="name">이름</label></td>
-				 	<td><input type="text" name="username" th:field="*{username}" placeholder="Username" required /></td>
-				 </tr>
-				 <tr>
-				 <td bgcolor="orange"><label for="password">비밀번호</label></td>
-				 	<td><input type="password" name="password" th:field="*{password}" placeholder="Password"/></td>
-				 </tr>
-				 <tr>
-				 <td bgcolor="orange"><label for="role">직급</label></td>
-				 	<td><input type="text" name="role" th:field="*{role}" placeholder="role"/></td>
-				 </tr>
-			 </table>
-		 </form>
+	<h2>회원가입</h2>    
+	<form action="/join" th:object="${member}" method="post">	<!-- 폼의 데이터를 바인딩할 객체를 지정, ${member}는 Thymeleaf 에서 전달된 모델 객체인 member를 참조 -->
+																<!-- 이 폼은 Member 객체와 바인딩되어 사용자가 입력한 데이터가 이 객체의 필드에 자동으로 설정 -->
+		<table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
+			<tr>
+				<td bgcolor="orange"><label for="name">이름</label></td>
+				<td><input type="text" id="username" th:field="*{username}" placeholder="Username" required /></td>
+			</tr>
+			<tr>
+				<td bgcolor="orange"><label for="password">비밀번호</label></td>
+				<td><input type="password" id="password" th:field="*{password}" placeholder="Password" required/></td>
+			</tr>
+			<tr>
+				<td bgcolor="orange"><label for="role">직급</label></td>
+	            <td>
+	            <select id="role" th:field="*{role}">
+	            	<option value="ROLE_MEMBER">Member</option>
+	                <option value="ROLE_MANAGER">Manager</option>
+	                <option value="ROLE_ADMIN">Admin</option>
+	            </select>
+	            </td>
+			</tr>
+		</table>
+		<br>
+		<button type="submit">회원가입</button>
+	</form>
 </body>
 </html>

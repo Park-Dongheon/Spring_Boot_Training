@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>시큐리티 테스트</title>
+	<meta charset="UTF-8">
+	<title>시큐리티 테스트</title>
+	<script>
+		function goJoin() {
+			window.location.href='/join';
+		}
+	</script>
 </head>
 <body th:align="center">
 	<h2>로그인</h2>
@@ -17,6 +22,7 @@
 			 	<td><input type="password" name="password" placeholder="Password"/></td>
 			 </tr>
 			 <tr>
+                <td colspan="1" align="center"><button type="button" onclick="goJoin()">회원가입</button></td>
 			 	<td colspan="2" align="center"><input type="submit" value="로그인"/></td>
 			 </tr>
 		 </table>
