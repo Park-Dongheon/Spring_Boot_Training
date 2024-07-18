@@ -1,7 +1,5 @@
 package edu.pnu.controll;
 
-import java.security.Principal;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
@@ -47,24 +45,23 @@ public class LoginController {
 	}
 	
 	@GetMapping("/join")
-	public String join(Model model) {
-		model.addAttribute("member", new Member() );
+	public String join() {
 		System.out.println("join 요청입니다.");
 		return "join";
 	}
 	
 	@PostMapping("/join")
-	public String joinProc(Model model, @ModelAttribute Member member) {
-		
+	public String joinProc(@ModelAttribute("member") Member member, Model model) {
 		memberService.save(member);
-		model.addAttribute("exception", member.getUsername());
+		model.addAttribute("member", member);
 		return "redirect:welcome";
 	}
 	
-    @GetMapping("/welcome")
-    public String welcome(Model model, Member member) {
-    	
-        return "welcome";
-    }
+	@GetMapping("/welcome")
+	public String welcome(@ModelAttribute("member") Member member, Model model) {
+		System.out.println("welcome 요청입니다.");
+		return "welcome";
+	}
+
 	 
 }

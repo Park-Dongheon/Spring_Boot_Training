@@ -56,8 +56,8 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="edu.pnu.persistence.MemberRepository"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
-    <fullyQualifiedTypeName name="edu.pnu.domain.Member"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.authority.AuthorityUtils"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="edu.pnu.domain.Member"/>
 </qualifiedTypeNameHistroy>
