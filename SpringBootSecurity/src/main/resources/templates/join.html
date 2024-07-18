@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>시큐리티 테스트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+        }
+        .info div {
+            margin-bottom: 10px;
+        }
+        .info div span {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body th:align="center">
+	<h2>회원가입</h2>
+		 <form action="/welcome" method="post">
+			 <table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
+				 <tr>
+				 	<td bgcolor="orange"><label for="name">이름</label></td>
+				 	<td><input type="text" name="username" th:field="*{username}" placeholder="Username" required /></td>
+				 </tr>
+				 <tr>
+				 <td bgcolor="orange"><label for="password">비밀번호</label></td>
+				 	<td><input type="password" name="password" th:field="*{password}" placeholder="Password"/></td>
+				 </tr>
+				 <tr>
+				 <td bgcolor="orange"><label for="role">직급</label></td>
+				 	<td><input type="text" name="role" th:field="*{role}" placeholder="role"/></td>
+				 </tr>
+			 </table>
+		 </form>
+</body>
+</html>
