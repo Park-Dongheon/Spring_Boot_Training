@@ -15,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class BoardUserDetailsService implements UserDetailsService{
 	
-	private MemberRepository memberRepo;
+	private final MemberRepository memberRepo;
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

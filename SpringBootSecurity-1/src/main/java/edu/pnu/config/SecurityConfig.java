@@ -2,15 +2,23 @@ package edu.pnu.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+import edu.pnu.service.BoardUserDetailsService;
+import lombok.RequiredArgsConstructor;
+
 @Configuration		// 이 클래스가 설정 클래스라고 정의(IoC 컨테이너에 로드)
 @EnableWebSecurity	// 스프링 시큐리티 적용에 필요한 필터 객체들 자동 생성
+@RequiredArgsConstructor
 public class SecurityConfig {
+	
+	private final BoardUserDetailsService boardUserDetailsService;
 	
 	@Bean			// 이 메서드가 리턴 하는 객체를 IoC 컨테이너에 등록하라는 지시
 	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -25,7 +33,7 @@ public class SecurityConfig {
 				.requestMatchers("/admin/**").hasAnyRole("ADMIN")				// /admin/ 로 시작하는 모든 경로에 대해 접근 제어를 설정, hasAnyRole("ADMIN") 메소드로 이 경로에 접근하려면 사용자가 'ADMIN' 역할(Role)을 가지고 있어야 함
 																				// 실제로는 'ROLE_ADMIN' 역할을 확인
 				.anyRequest().permitAll()										// 위에 명시되지 않은 모든 요청 경로에 모든 사용자에게 접근을 허용
-				);	
+		);	
 		
 		
 		// SpringBoot가 제공해주는 로그인 사용하겠다는 설정
@@ -44,19 +52,35 @@ public class SecurityConfig {
 				.accessDeniedPage("/accessDenied")		// 접근 거부 시 Redirect 할 페이지
 		);
 		
+		// 로그아웃 설정
 		http.logout(logout -> logout
 				.invalidateHttpSession(true)		// 현재 브라우저와 연결된 세션 강제 종료
 				.deleteCookies("JESSIONID")			// 세션 아이디가 저장된 쿠키 삭제
 				.logoutSuccessUrl("/index")			// 로그아웃 후 이동할 URL 지정
 		);
 		
+		// Spring Security 에서 HTTP 응답 헤더 설정을 구성하는 부분, frameOptions 헤더를 비활성화(disable)함
+		http.headers(headers -> headers
+				.frameOptions(frameOptions -> frameOptions	// X-Frame-Options 헤더는 웹 페이지가 다른 사이트의 <iframe>, <frame>, <object> 에 의해 로드되지 않도록 방지하는 데 사용
+															// 이를 통해 클릭재킹(clickjacking) 공격을 방지
+						.disable()							// Spring Security 는 X-Frame-Options 헤더를 DENY로 설정, 모든 프레임 로딩을 막음
+															// 이 설정을 비활성화하면 웹 페이지가 다른 페이지 내에서 프레임으로 로드될 수 있도록 허용
+				)
+		);
 		
 		return http.build();
 	}
 	
-	 @Bean
-	 PasswordEncoder passwordEncoder() {
-		 return new BCryptPasswordEncoder();
-	 }
+	@Bean
+	PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+	
+	@Bean
+	AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
+        AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
+        authenticationManagerBuilder.userDetailsService(boardUserDetailsService).passwordEncoder(passwordEncoder());
+		return authenticationManagerBuilder.build();
+	}
 
 }

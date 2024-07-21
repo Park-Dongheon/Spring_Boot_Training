@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>시큐리티 테스트</title>
+</head>
+<body th:align="center">
+ 	<h1>죄송합니다. 페이지에 대한 접근권한이 없습니다. *^^*</h1>
+ 	<br>
+ 	<table border="1" th:cellpadding="0" th:cellspacing="0" th:width="full" th:align="center">
+ 		<tr>
+ 			<th bgcolor="orange">다시 로그인</th>
+ 			<td><a th:href="@{/login}">클릭</a></td>
+ 		</tr>
+  		<tr>
+  			<th bgcolor="orange">뒤로가기</th>
+ 			<td><a th:href="@{/loginSuccess}">클릭</a></td>
+ 		</tr>
+ 	</table>
+</body>
+</html>
