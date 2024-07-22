@@ -17,7 +17,6 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import edu.pnu.domain.Member;
-import edu.pnu.util.JWTUtil;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -65,7 +64,10 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 		
 		// username 으로 JWT 를 생성해서 Response Header - Authorization 에 담아서 돌려준다.
 		// 이것은 하나의 예시로서 필요에 따라 추가 정보를 담을 수 있다.
-		String token = JWTUtil.getJWT(user.getUsername());
+		String token = JWT.create()
+						  .withExpiresAt(new Date(System.currentTimeMillis()+1000*60*10000))
+						  .withClaim("username", user.getUsername())
+						  .sign(Algorithm.HMAC256("edu.pnu.jwt"));
 		
 		response.addHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
 		response.setStatus(HttpStatus.OK.value());
