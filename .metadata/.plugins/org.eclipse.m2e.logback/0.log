@@ -17775,3 +17775,6 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2024-07-21 21:34:15,683 [Worker-101: Launching SpringBootSecurity-2 - SpringBootSecurity2Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-07-21 21:34:15,699 [Worker-101: Launching SpringBootSecurity-2 - SpringBootSecurity2Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 7 resources from src\main\resources to target\classes
 2024-07-21 21:34:15,709 [Worker-101: Launching SpringBootSecurity-2 - SpringBootSecurity2Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Workspace-sts4\SpringBootSecurity-2\src\test\resources
+2024-07-21 21:35:58,624 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-21 21:35:58,634 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 7 resources from src\main\resources to target\classes
+2024-07-21 21:35:58,645 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Workspace-sts4\SpringBootSecurity-2\src\test\resources
