@@ -1991,3 +1991,1929 @@ Caused by: java.lang.IllegalStateException: The Plug-in Development Environment 
 	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
 	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
 	... 25 more
+!SESSION 2024-07-23 13:36:39.763 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-23 13:37:06.209
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-23 13:37:10.792
+!MESSAGE Logback config file: C:\WorkSpace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 13:37:11.147
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 13:37:11.147
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 13:37:11.408
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 13:37:11.408
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 4 4 2024-07-23 13:37:14.975
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Cannot determine URI for '/SpringBootSecurityJWT-1/src/main/java/edu/pnu/controller/LoginController.java'.
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3202)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3213)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1389)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/SpringBootSecurityJWT-1/src/main/java/edu/pnu/controller/LoginController.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:116)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:565)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:992)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1253)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4187)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1483)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2564)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2537)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1415)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3171)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2279)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3188)
+	... 110 more
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2024-07-23 13:37:14.975
+!MESSAGE Cannot determine URI for '/SpringBootSecurityJWT-1/src/main/java/edu/pnu/controller/LoginController.java'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/SpringBootSecurityJWT-1/src/main/java/edu/pnu/controller/LoginController.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:116)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:565)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:992)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1253)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4187)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1483)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2564)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2537)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1415)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3171)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2279)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3188)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3213)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1389)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2024-07-23 13:37:14.976
+!MESSAGE Cannot determine URI for '/SpringBootSecurityJWT-1/src/main/java/edu/pnu/controller/LoginController.java'.
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-23 13:37:15.505
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:50.386
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:50.386
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:50.387
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:50.412
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 13:40:50.438
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/WorkSpace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721709650438
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:50.439
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 13:40:50.446
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8796
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:50.632
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.504
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.504
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.505
+!MESSAGE Classpath changed for project: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.505
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.505
+!MESSAGE Classpath changed for project: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.506
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.506
+!MESSAGE Classpath changed for project: Chapter04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.506
+!MESSAGE Classpath changed for project: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.507
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.507
+!MESSAGE Classpath changed for project: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.507
+!MESSAGE Boot project ADDED: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.507
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.508
+!MESSAGE Boot project ADDED: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.508
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.508
+!MESSAGE Classpath changed for project: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.509
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.509
+!MESSAGE Classpath changed for project: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.509
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.510
+!MESSAGE Classpath changed for project: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.510
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.510
+!MESSAGE Classpath changed for project: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.510
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.511
+!MESSAGE Classpath changed for project: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.511
+!MESSAGE Boot project ADDED: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.511
+!MESSAGE Classpath changed for project: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.512
+!MESSAGE Boot project ADDED: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.512
+!MESSAGE Classpath changed for project: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.512
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.512
+!MESSAGE Classpath changed for project: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.513
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.513
+!MESSAGE Classpath changed for project: board-spring-boot-starter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:40:52.513
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-23 13:41:00.810
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA persistence.xml file 3.0': [GenericPersistenceXmlDefinition3_0, GenericPersistenceXmlDefinition3_1]
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-23 13:41:00.810
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA orm.xml mapping file 3.0': [GenericOrmXmlDefinition3_0, GenericOrmXmlDefinition3_1]
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:02.505
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:02.506
+!MESSAGE Classpath changed for project: com.rubypaper_Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:05.025
+!MESSAGE Classpath changed for project: com.rubypaper_Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:05.026
+!MESSAGE Boot project ADDED: com.rubypaper_Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:05.265
+!MESSAGE Classpath changed for project: com.rubypaper_Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:07.132
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-23 13:41:09.004
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-23 13:41:09.008
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:13.360
+!MESSAGE Classpath changed for project: com.rubypaper_Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:13.361
+!MESSAGE Boot project REMOVED: com.rubypaper_Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:21.665
+!MESSAGE Classpath changed for project: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:41:25.109
+!MESSAGE Classpath changed for project: board-spring-boot-starter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 13:46:55.074
+!MESSAGE Classpath changed for project: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 14:02:00.371
+!MESSAGE Classpath changed for project: Chapter5-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 14:02:00.371
+!MESSAGE Boot project REMOVED: Chapter5-1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-23 14:02:08.927
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-23 14:02:08.930
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 14:59:02.974
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 14:59:02.996
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 14:59:04.240
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-07-23 14:59:52.118
+!MESSAGE Builder must not be set
+!STACK 0
+java.lang.IllegalStateException: Builder must not be set
+	at org.eclipse.mylyn.wikitext.parser.MarkupParser.parseToHtml(MarkupParser.java:114)
+	at org.eclipse.lsp4e.LSPEclipseUtils.lambda$29(LSPEclipseUtils.java:1440)
+	at org.eclipse.lsp4j.jsonrpc.messages.Either.map(Either.java:75)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getHtmlDocString(LSPEclipseUtils.java:1429)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:342)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 15:16:38.357
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 15:16:40.502
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.eclipse.ui 4 0 2024-07-23 16:34:22.019
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: must specify at least one linked position
+	at org.eclipse.jface.text.link.LinkedModeModel.enforceNotEmpty(LinkedModeModel.java:530)
+	at org.eclipse.jface.text.link.LinkedModeModel.install(LinkedModeModel.java:484)
+	at org.eclipse.jface.text.link.LinkedModeModel.forceInstall(LinkedModeModel.java:441)
+	at org.eclipse.jdt.internal.ui.viewsupport.LinkedProposalModelPresenter.enterLinkedMode(LinkedProposalModelPresenter.java:109)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.LinkedCorrectionProposal.performChange(LinkedCorrectionProposal.java:191)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.apply(CUCorrectionProposal.java:228)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:1004)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:951)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$3.widgetDefaultSelected(CompletionProposalPopup.java:697)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:136)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 16:38:00.713
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 16:38:00.714
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 16:38:01.566
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 16:42:22.775
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 16:42:24.965
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 16:58:06.779
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:41:15.368
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth_Token
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:41:15.368
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth_Token
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:41:16.507
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth_Token
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:41:25.636
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth_Token
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:41:25.637
+!MESSAGE Boot project REMOVED: SpringBootSecurityOAuth_Token
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-23 17:41:31.742
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more
+Root exception:
+java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more
+!SESSION 2024-07-23 17:42:00.152 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-23 17:42:02.382
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-23 17:42:05.663
+!MESSAGE Logback config file: C:\WorkSpace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 17:42:05.974
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 17:42:05.974
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 17:42:06.218
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 17:42:06.218
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-23 17:42:09.199
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.223
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.223
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.288
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.289
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.289
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.290
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.291
+!MESSAGE Boot project ADDED: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.292
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.292
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.293
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.295
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.295
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.296
+!MESSAGE Boot project ADDED: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.296
+!MESSAGE Boot project ADDED: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.297
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.297
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.298
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.304
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 17:42:09.311
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/WorkSpace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721724129310
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.313
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 17:42:09.321
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9272
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.670
+!MESSAGE Classpath changed for project: board-spring-boot-starter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:42:09.670
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-07-23 17:43:05.317
+!MESSAGE An internal error occurred during: "Setting VM arguments".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:94)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:246)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getVMArguments(TargetPlatformService.java:576)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService$1.run(TargetPlatformService.java:554)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-23 17:43:05.321
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveBundles(ProfileBundleContainer.java:115)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:386)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:568)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:649)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:572)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveBundles(ProfileBundleContainer.java:115)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:386)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:568)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:649)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:572)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2024-07-23 17:50:47.892 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-23 17:50:49.570
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-23 17:50:52.061
+!MESSAGE Logback config file: C:\WorkSpace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 17:50:52.392
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 17:50:52.392
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-23 17:50:52.637
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-23 17:50:52.637
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-23 17:50:55.662
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.743
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.745
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.809
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.810
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.822
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.823
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.824
+!MESSAGE Boot project ADDED: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.824
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.825
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.826
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.827
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.829
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.830
+!MESSAGE Boot project ADDED: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.834
+!MESSAGE Boot project ADDED: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.835
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.836
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.838
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.842
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.888
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 17:50:55.918
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/WorkSpace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721724655918
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:55.919
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 17:50:55.925
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 16916
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-23 17:50:56.235
+!MESSAGE Classpath changed for project: board-spring-boot-starter
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-07-23 17:51:47.607
+!MESSAGE An internal error occurred during: "Setting VM arguments".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:94)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:246)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getVMArguments(TargetPlatformService.java:576)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService$1.run(TargetPlatformService.java:554)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-23 17:51:47.611
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveBundles(ProfileBundleContainer.java:115)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:386)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:568)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:649)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:572)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.variables.VariablesPlugin.getStringVariableManager()" because the return value of "org.eclipse.core.variables.VariablesPlugin.getDefault()" is null
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:80)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:259)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveBundles(ProfileBundleContainer.java:115)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:386)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:568)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:649)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:572)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.resources 4 2 2024-07-23 17:51:48.439
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid org.eclipse.pde.core_3.18.100.v20240531-0649 [400]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:1064)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReferences(BundleContextImpl.java:580)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReferences(BundleContextImpl.java:1105)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getAgent(P2TargetUtils.java:384)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getProfileRegistry(P2TargetUtils.java:1003)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:235)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:351)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:453)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:272)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1226)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.shutdown(SaveManager.java:1461)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:702)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.removedService(ResourcesPlugin.java:599)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.removedService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerRemoved(ServiceTracker.java:973)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerRemoved(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.untrack(AbstractTracked.java:342)
+	at org.osgi.util.tracker.ServiceTracker.close(ServiceTracker.java:383)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:518)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-07-23 17:51:48.453
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2024-07-25 21:15:40.034 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-25 21:16:45.134
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-25 21:16:50.354
+!MESSAGE Logback config file: C:\Workspace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-07-25 21:16:51.224
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-25 21:16:51.224
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-25 21:16:51.890
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-25 21:16:51.890
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 4 4 2024-07-25 21:16:58.934
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Cannot determine URI for '/SpringBootSecurityOAuth/src/main/resources/application.properties'.
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3202)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3213)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1389)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/SpringBootSecurityOAuth/src/main/resources/application.properties'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:116)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:565)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4187)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1483)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:153)
+	at org.eclipse.ui.internal.genericeditor.ExtensionBasedTextEditor.doSetInput(ExtensionBasedTextEditor.java:92)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3171)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2279)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3188)
+	... 110 more
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2024-07-25 21:16:58.936
+!MESSAGE Cannot determine URI for '/SpringBootSecurityOAuth/src/main/resources/application.properties'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/SpringBootSecurityOAuth/src/main/resources/application.properties'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:116)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:565)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4187)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1483)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:153)
+	at org.eclipse.ui.internal.genericeditor.ExtensionBasedTextEditor.doSetInput(ExtensionBasedTextEditor.java:92)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3171)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2279)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3188)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3213)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1389)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2024-07-25 21:16:58.937
+!MESSAGE Cannot determine URI for '/SpringBootSecurityOAuth/src/main/resources/application.properties'.
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-25 21:17:00.410
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dongh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:15.283
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:15.285
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:15.286
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:15.337
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 21:17:15.418
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Workspace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721909835417
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:15.419
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 21:17:15.444
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9108
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:15.469
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.518
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.525
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.529
+!MESSAGE Classpath changed for project: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.537
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.538
+!MESSAGE Classpath changed for project: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.539
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.540
+!MESSAGE Classpath changed for project: Chapter04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.542
+!MESSAGE Classpath changed for project: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.545
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.546
+!MESSAGE Classpath changed for project: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.555
+!MESSAGE Boot project ADDED: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.557
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.561
+!MESSAGE Classpath changed for project: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.564
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.566
+!MESSAGE Classpath changed for project: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.567
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.569
+!MESSAGE Classpath changed for project: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.570
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.571
+!MESSAGE Classpath changed for project: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.572
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.574
+!MESSAGE Classpath changed for project: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.577
+!MESSAGE Boot project ADDED: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.579
+!MESSAGE Classpath changed for project: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.580
+!MESSAGE Boot project ADDED: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.581
+!MESSAGE Classpath changed for project: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.583
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.584
+!MESSAGE Classpath changed for project: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.585
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.586
+!MESSAGE Classpath changed for project: board-spring-boot-starter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:21.587
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-25 21:17:43.138
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-25 21:17:43.141
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-25 21:17:43.145
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-25 21:17:43.147
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-25 21:17:43.176
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-25 21:17:43.187
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-25 21:17:47.335
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA orm.xml mapping file 3.0': [GenericOrmXmlDefinition3_0, GenericOrmXmlDefinition3_1]
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-25 21:17:47.337
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA persistence.xml file 3.0': [GenericPersistenceXmlDefinition3_0, GenericPersistenceXmlDefinition3_1]
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:48.179
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:52.747
+!MESSAGE Classpath changed for project: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:57.140
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:17:57.141
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:04.800
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:05.084
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:05.089
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:05.539
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:09.217
+!MESSAGE Classpath changed for project: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:09.790
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:09.970
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:11.978
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:12.166
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:12.397
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 21:18:12.608
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-07-25 21:18:15.130
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-25 21:18:16.869
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-25 21:18:16.880
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-07-25 21:46:22.980
+!MESSAGE Builder must not be set
+!STACK 0
+java.lang.IllegalStateException: Builder must not be set
+	at org.eclipse.mylyn.wikitext.parser.MarkupParser.parseToHtml(MarkupParser.java:114)
+	at org.eclipse.lsp4e.LSPEclipseUtils.lambda$29(LSPEclipseUtils.java:1440)
+	at org.eclipse.lsp4j.jsonrpc.messages.Either.map(Either.java:75)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getHtmlDocString(LSPEclipseUtils.java:1429)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:342)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-07-25 21:46:25.940
+!MESSAGE Could not resolve completion items due to timeout after 500 milliseconds in `completionItem/resolve`
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.resolveItem(LSCompletionProposal.java:365)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:331)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-07-25 21:46:25.960
+!MESSAGE Builder must not be set
+!STACK 0
+java.lang.IllegalStateException: Builder must not be set
+	at org.eclipse.mylyn.wikitext.parser.MarkupParser.parseToHtml(MarkupParser.java:114)
+	at org.eclipse.lsp4e.LSPEclipseUtils.lambda$29(LSPEclipseUtils.java:1440)
+	at org.eclipse.lsp4j.jsonrpc.messages.Either.map(Either.java:75)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getHtmlDocString(LSPEclipseUtils.java:1429)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:342)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 22:36:15.162
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 22:36:15.163
+!MESSAGE Boot project REMOVED: SpringBootSecurityOAuth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 22:39:58.752
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2_JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 22:39:58.753
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth2_JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-25 22:40:02.278
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2_JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 00:09:21.566
+!MESSAGE Classpath changed for project: SpringBootSecurityOAuth2_JWT
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-26 00:48:49.299
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more
+Root exception:
+java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more
+!SESSION 2024-07-26 01:04:35.057 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-26 01:04:44.160
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-26 01:04:49.751
+!MESSAGE Logback config file: C:\Workspace-sts4\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-07-26 01:04:50.547
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-26 01:04:50.547
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-07-26 01:04:51.084
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-07-26 01:04:51.084
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-26 01:04:59.098
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\01DevelopKits\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Workspace-sts4/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1721923499097
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:04:59.100
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-26 01:04:59.125
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5084
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.301
+!MESSAGE Boot project ADDED: Chapter01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.305
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.307
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.309
+!MESSAGE Boot project ADDED: Chapter02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.310
+!MESSAGE Boot project ADDED: Chapter03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.311
+!MESSAGE Boot project ADDED: Chapter05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.313
+!MESSAGE Boot project ADDED: Chapter06
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.315
+!MESSAGE Boot project ADDED: Mission1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.316
+!MESSAGE Boot project ADDED: Mission2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.317
+!MESSAGE Boot project ADDED: Mission3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.321
+!MESSAGE Boot project ADDED: Mission4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.324
+!MESSAGE Boot project ADDED: Mission5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.363
+!MESSAGE Boot project ADDED: SpringBootSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.422
+!MESSAGE Boot project ADDED: SpringBootSecurity-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.461
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.526
+!MESSAGE Boot project ADDED: SpringBootSecurityJWT-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.561
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.562
+!MESSAGE Boot project ADDED: SpringBootSecurityOAuth2_JWT
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-26 01:05:02.605
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dongh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.607
+!MESSAGE Boot project ADDED: board-spring-boot-starter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-07-26 01:05:02.865
+!MESSAGE Classpath changed for project: board-spring-boot-starter
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-26 01:06:11.958
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA persistence.xml file 3.0': [GenericPersistenceXmlDefinition3_0, GenericPersistenceXmlDefinition3_1]
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2024-07-26 01:06:11.960
+!MESSAGE Duplicate resource definitions listed for resource type 'JPA orm.xml mapping file 3.0': [GenericOrmXmlDefinition3_0, GenericOrmXmlDefinition3_1]
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-26 01:06:12.011
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-26 01:06:12.015
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-26 01:06:12.018
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-26 01:06:12.021
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-26 01:06:12.051
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-26 01:06:12.061
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.pde.core 4 0 2024-07-26 01:15:18.997
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more
+Root exception:
+java.lang.ExceptionInInitializerError
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:583)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:528)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:997)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1022)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:103)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:148)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:58)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:386)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalStateException: The Plug-in Development Environment requires the PlatformAdmin service to operate. Please install the compatibility fragment 'org.eclipse.osgi.compatibility.state'.
+	at org.eclipse.pde.internal.build.BundleHelper.getPlatformAdmin(BundleHelper.java:84)
+	at org.eclipse.pde.internal.core.MinimalState.<clinit>(MinimalState.java:85)
+	... 25 more

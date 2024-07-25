@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>OAuth2 테스트</title>
+</head>
+<body th:align="center">
+	<h2>회원가입</h2>    
+	<form action="/join"  method="post">
+		<table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
+			<tr>
+				<td bgcolor="orange"><label for="name">이름</label></td>
+				<td><input type="text" name="username" placeholder="Username"/></td>
+			</tr>
+			<tr>
+				<td bgcolor="orange"><label for="password">비밀번호</label></td>
+				<td><input type="password" name="password" placeholder="Password"/></td>
+			</tr>
+			<tr>
+				<td bgcolor="orange"><label for="role">직급</label></td>
+	            <td bgcolor="orange">
+	            <select name="role">
+	            	<option value="ROLE_MEMBER">Member</option>
+	                <option value="ROLE_MANAGER">Manager</option>
+	                <option value="ROLE_ADMIN">Admin</option>
+	            </select>
+	            </td>
+			</tr>
+		</table>
+		<br>
+		<input type="submit" value="회원가입"/>
+	</form>
+</body>
+</html>

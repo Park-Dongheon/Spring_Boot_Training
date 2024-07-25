@@ -35,6 +35,8 @@ public class LoginController {
 			// 사용자 입력 정보와 비교한 뒤 자격 증명에 성공하면 Authentication 객체를 만들어서 리턴한다.
 			Authentication auth = authenticationConfiguration.getAuthenticationManager().authenticate(authToken);
 			
+//			User user = (User) auth.getPrincipal();
+			
 //			String token = JWT.create()
 //					  .withExpiresAt(new Date(System.currentTimeMillis()+1000*60*10000))
 //					  .withClaim("username", member.getUsername())

@@ -14,8 +14,8 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="759"/>
-		<item key="DIALOG_Y_ORIGIN" value="115"/>
+		<item key="DIALOG_X_ORIGIN" value="189"/>
+		<item key="DIALOG_Y_ORIGIN" value="52"/>
 		<item key="DIALOG_WIDTH" value="575"/>
 		<item key="DIALOG_HEIGHT" value="632"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
@@ -32,7 +32,7 @@
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="NewInterfaceCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="279"/>
+		<item key="DIALOG_X_ORIGIN" value="110"/>
 		<item key="DIALOG_Y_ORIGIN" value="185"/>
 		<item key="DIALOG_WIDTH" value="580"/>
 		<item key="DIALOG_HEIGHT" value="543"/>
@@ -96,7 +96,7 @@
 		<item key="InsertPosition.v2" value="1"/>
 	</section>
 	<section name="DialogBounds_OverrideMethodDialog">
-		<item key="DIALOG_X_ORIGIN" value="366"/>
+		<item key="DIALOG_X_ORIGIN" value="151"/>
 		<item key="DIALOG_Y_ORIGIN" value="181"/>
 		<item key="DIALOG_WIDTH" value="539"/>
 		<item key="DIALOG_HEIGHT" value="513"/>
@@ -115,5 +115,12 @@
 		<item key="DIALOG_WIDTH" value="543"/>
 		<item key="DIALOG_HEIGHT" value="517"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
 	</section>
 </section>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>OAuth2 테스트</title>
+</head>
+<body th:align="center">
+	<h2>로그인</h2>
+		 <form action="/login" method="post">
+		 <table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
+			 <tr>
+			 	<td bgcolor="orange">username:</td>
+			 	<td><input type="text" name="username" placeholder="Username"/></td>
+			 </tr>
+			 <tr>
+			 <td bgcolor="orange">password:</td>
+			 	<td><input type="password" name="password" placeholder="Password"/></td>
+			 </tr>
+			 <tr>
+			 	<td colspan="2" align="center"><input type="submit" value="로그인"/></td>
+			 </tr>
+		 </table>
+	 </form>
+    <a th:href="@{/join}">회원가입</a>
+    <br>
+	<a href="http://localhost:8080/oauth2/authorization/google">구글로그인</a>
+	<a href="http://localhost:8080/oauth2/authorization/naver">네이버 로그인</a>
+	<a href="http://localhost:8080/oauth2/authorization/kakao">카카오 로그인</a>
+</body>
+</html>

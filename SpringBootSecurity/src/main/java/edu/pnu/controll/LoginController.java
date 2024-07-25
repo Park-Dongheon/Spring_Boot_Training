@@ -18,6 +18,7 @@ import lombok.RequiredArgsConstructor;
 @Controller
 @RequiredArgsConstructor
 public class LoginController {
+	
 	private final MemberService memberService;
 
 	@GetMapping("/login")

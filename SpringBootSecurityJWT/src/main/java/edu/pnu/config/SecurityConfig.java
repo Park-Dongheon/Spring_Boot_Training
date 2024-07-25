@@ -10,14 +10,20 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.intercept.AuthorizationFilter;
 
 import edu.pnu.config.filter.JWTAuthenticationFilter;
+import edu.pnu.config.filter.JWTAuthorizationFilter;
+import edu.pnu.persistence.MemberRepository;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 	@Autowired
 	private AuthenticationConfiguration authenticationConfiguration;
+	@Autowired
+	private MemberRepository memberRepo;
+	
 	
 	@Bean
 	PasswordEncoder passwordEncoder() {
@@ -42,9 +48,11 @@ public class SecurityConfig {
 		http.sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 		// JWT는 세션을 유지하지 않음, 세션 생성 시 JWT 토큰을 전달하고 세션 연결을 삭제
 		
+		// 스프링 시큐리티가 등록한 필터들 중에서 AuthorizationFilter 앞에 앞에서 작성한 필터를 삽입한다.
+		http.addFilterBefore(new JWTAuthorizationFilter(memberRepo), AuthorizationFilter.class);
+		
 		// 스프링 시큐리티가 등록한 필터체인의 뒤에 작성한 필터를 추가
 		http.addFilter(new JWTAuthenticationFilter(authenticationConfiguration.getAuthenticationManager()));
-		
 		
 		return http.build();
 	}

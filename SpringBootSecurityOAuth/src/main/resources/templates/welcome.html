@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>OAuth2 테스트</title>
+</head>
+<body th:align="center">
+<h2>Welcome!</h2>
+	<form action="/login" method="get">
+		<table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
+			<tr>
+				<th bgcolor="orange">환영합니다! <span th:text="${member.username}"></span></th>
+			</tr>	
+		</table>
+		<br>
+		<input type="submit" value="로그인 페이지로 돌아가기" />
+	</form>
+</body>
+</html>
